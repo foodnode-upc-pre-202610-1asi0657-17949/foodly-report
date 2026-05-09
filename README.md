@@ -1806,6 +1806,157 @@ Se concluye la última iteración confirmando que la meta de Modificabilidad se 
 **Link del tablero:**
 https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b53ed07c7e7F9CD517/kanban-board
 
+
+#### 5.1 Testing Suites & General Patterns
+
+##### 5.1.1 Backend Application Core Testing Suite
+
+##### 5.1.2 Pattern Based Backend Application(s)
+
+##### 5.1.3 Pattern Based Custom Software Library
+
+##### 5.1.4 Framework Pattern Driven Refactoring Report
+
+
+#### 5.2 Software Configuration Management
+
+##### 5.2.1 Software Development Environment Configuration
+
+Se detallan las herramientas de software, plataformas y servicios externos configurados y utilizados durante el ciclo de vida de desarrollo de **Foodly**, alineados con los requerimientos arquitectónicos de nuestra startup **FoodNode**.
+
+**Gestión de Proyectos y Colaboración Técnica**
+* **GitHub:** <https://github.com>
+  Utilizado como la plataforma central para la colaboración técnica, alojamiento de repositorios y control de versiones distribuido de todo el ecosistema de software. La organización principal se encuentra alojada en <https://github.com/foodnode-upc-pre-202610-1asi0657-17949>.
+* **Trello:** <https://trello.com>
+  Implementado para la gestión ágil del proyecto mediante tableros Kanban y la administración visual de nuestro Product Backlog. Permite realizar el seguimiento detallado de las historias de usuario, atributos de calidad y restricciones a lo largo de las iteraciones de diseño.
+* **WhatsApp:** <https://www.whatsapp.com>
+  Canal secundario de comunicación directa y rápida entre los integrantes del equipo para la coordinación diaria y la resolución ágil de bloqueos.
+
+**Diseño UX/UI y Modelado del Producto**
+* **UXPressia:** <https://uxpressia.com>
+  Herramienta principal empleada para el diseño centrado en el usuario. Con ella se elaboraron artefactos clave como las fichas de User Personas (Mateo y Doña Rosa), los Mapas de Empatía y los mapeos de escenarios actuales (As-Is) y proyectados (To-Be).
+* **Figma:** <https://www.figma.com>
+  Plataforma colaborativa utilizada para la creación de wireframes, wireflows, prototipos interactivos y el diseño visual integral de la interfaz web y móvil.
+
+**Desarrollo de Software (Frontend, Backend y Móvil)**
+* **Vue.js:** <https://vuejs.org>
+  Framework progresivo de JavaScript seleccionado para el desarrollo integral de la aplicación web (Frontend), garantizando una interfaz reactiva e interactiva para los comensales y dueños de locales.
+* **Java nativo (Jakarta EE):** <https://jakarta.ee>
+  Lenguaje y especificación estándar utilizados para la construcción de los microservicios core del backend, asegurando una lógica transaccional robusta y de alto rendimiento.
+* **WildFly:** <https://www.wildfly.org>
+  Servidor de aplicaciones configurado para el despliegue de nuestros microservicios desarrollados en Java, el cual integra además el Message Broker ActiveMQ para la gestión ágil de colas y eventos asíncronos.
+* **Android:** <https://developer.android.com>
+  Plataforma objetivo para el desarrollo de la aplicación móvil nativa dirigida a los comensales exploradores, consumiendo las APIs RESTful expuestas por el backend.
+
+**Sistemas de Bases de Datos (Persistencia Políglota)**
+* **MySQL / Azure SQL:** <https://www.mysql.com>
+  Motor relacional utilizado para mantener la información transaccional estructurada, garantizando la integridad referencial y transacciones ACID en los microservicios de Identidad (Identity DB) y Comunidad (Community DB).
+* **MongoDB Atlas:** <https://www.mongodb.com/atlas>
+  Servicio de base de datos NoSQL orientada a documentos en la nube, implementado para almacenar los menús dinámicos y catálogos de los locales (Business DB) debido a la alta flexibilidad requerida en sus esquemas.
+* **Redis:** <https://redis.io>
+  Almacén de estructuras de datos en memoria RAM (Radar DB), fundamental para cachear las celdas hexagonales activas y proveer respuestas de búsqueda geoespacial ultrarrápidas en milisegundos.
+
+**APIs y Servicios Externos Integrados**
+* **Uber H3 Geospatial Indexing System:** <https://h3geo.org>
+  Librería central integrada mediante bindings nativos en Java para realizar la conversión de coordenadas geográficas en índices hexagonales y optimizar el radar de proximidad.
+* **Cloudinary:** <https://cloudinary.com>
+  Servicio en la nube integrado a través de nuestra capa de anticorrupción (Integration System) para gestionar el almacenamiento, optimización y distribución asíncrona de las imágenes de los platos.
+* **Mapbox / OpenRouteService:** <https://www.mapbox.com>
+  Proveedores externos utilizados para renderizar los mapas base, calcular distancias precisas y trazar rutas de navegación a pie para los usuarios.
+
+**Entornos de Desarrollo (IDE) y Pruebas**
+* **Android Studio:** IDE oficial configurado para la compilación, emulación y desarrollo de la aplicación móvil Android.
+* **IntelliJ IDEA / VS Code:** Entornos integrados empleados para la codificación de los microservicios en Java y la aplicación web en Vue.js.
+* **Navegadores Web:** Herramientas de desarrollo (DevTools) de Google Chrome, Edge y Brave utilizadas para la depuración y pruebas de la interfaz web.
+
+<br>
+
+##### 5.2.2 Source Code Management
+
+Para mantener una gestión centralizada, colaborativa y altamente trazable, el código fuente de **Foodly** se organiza bajo un modelo de control de versiones distribuido en **GitHub**.
+
+**Estructura y Repositorios**
+* **Organización Principal:** Centraliza todos los repositorios del ecosistema de software en <https://github.com/foodnode-upc-pre-202610-1asi0657-17949>.
+* **Repositorio de Documentación e Informes:** Alojado de forma exclusiva en <https://github.com/1ASI0657-FoodNode/Foodly-report>, donde se gestionan las versiones del informe mediante commits y ramas de trabajo.
+
+**Estrategia de Ramas (Branching Model)**
+Se adopta un flujo de trabajo estructurado para aislar el desarrollo de microservicios y vistas web antes de su paso a producción:
+* **Rama `main`:**
+  Contiene el historial de código completamente estable, probado y funcional, listo para ser contenerizado y desplegado en los entornos de nube pública.
+* **Rama `develop`:**
+  Rama principal de integración donde se unen las características terminadas por los distintos desarrolladores antes de generar una versión candidata a producción.
+* **Ramas de Características (`feat/*`):**
+  Ramas efímeras creadas a partir de `develop` para trabajar en historias de usuario específicas (ej. `feat/h3-radar-indexing` o `feat/live-menu-crud`).
+* **Ramas de Corrección (`hotfix/*`):**
+  Ramas destinadas a solucionar incidencias críticas detectadas directamente en el entorno de producción.
+
+<br>
+
+##### 5.2.3 Source Code Style Guide & Conventions
+
+Para garantizar la máxima legibilidad, mantenibilidad y coherencia técnica en una arquitectura orientada a microservicios y persistencia políglota, se aplican estrictas guías de estilo para cada tecnología:
+
+**Frontend (Vue.js, HTML5 y CSS)**
+* **HTML5:**
+  * **Estructura semántica:** Uso estricto de etiquetas en minúsculas y declaración inicial del documento mediante `<!DOCTYPE html>`.
+  * **Accesibilidad e Imágenes:** Todas las imágenes consumidas desde servicios externos deben especificar los atributos `alt`, `width` y `height` para evitar saltos visuales y mejorar la accesibilidad.
+  * **Atributos:** Valores siempre encapsulados entre comillas dobles y sin espacios en blanco alrededor del operador de asignación.
+* **CSS:**
+  * **Nomenclatura BEM:** Uso de la convención *Block Element Modifier* (ej. `radar-map__cell--active`) para selectores de clase, manteniendo todos los caracteres en minúsculas y separados por guiones.
+  * **Carga segura:** Consumo exclusivo de recursos, hojas de estilo y fuentes externas a través de protocolo seguro HTTPS.
+  * **Ordenamiento:** Agrupación y ordenamiento alfabético de propiedades dentro de cada bloque para facilitar su inspección y mantenimiento.
+* **Vue.js (JavaScript / TypeScript):**
+  * **Componentes de archivo único (SFC):** Nombres de archivos y componentes definidos en *PascalCase* (ej. `RadarMapViewer.vue`).
+  * **Variables y Métodos:** Definidos estrictamente utilizando *camelCase* (ej. `fetchNearbyHuariques`).
+  * **Gestión de estado:** Evitar la mutación directa de propiedades recibidas, delegando los cambios mediante la emisión de eventos explícitos (`$emit`).
+
+**Backend (Java nativo / Jakarta EE)**
+* **Nomenclatura de Clases e Interfaces:** Escritas en *PascalCase* y reflejando su responsabilidad en el patrón arquitectónico (ej. `RadarAPIController`, `RadarH3Service`, `IntegrationEventListener`).
+* **Variables, Atributos y Métodos:** Uso estricto de *camelCase* delegando conversiones y procesos a métodos autodescriptivos acordes al dominio geoespacial.
+* **Constantes:** Definidas en mayúsculas y separadas por guiones bajos (*SCREAMING_SNAKE_CASE*, ej. `DEFAULT_SEARCH_RADIUS`).
+* **Control de Excepciones:** Prohibido silenciar excepciones mediante bloques `try-catch` vacíos. Toda falla en la comunicación con ActiveMQ o APIs de terceros debe ser registrada adecuadamente e interceptada por la capa de anticorrupción.
+* **Inyección de Dependencias:** Preferencia por la inyección basada en constructores o anotaciones estándar de Jakarta EE para mantener el bajo acoplamiento entre los servicios.
+
+**Bases de Datos (SQL y NoSQL)**
+* **Bases de Datos Relacionales (MySQL / Azure SQL):**
+  * Nombres de tablas definidos en plural y minúsculas (ej. `usuarios`, `huariques`, `resenas`).
+  * Claves primarias y foráneas claramente identificadas usando el sufijo `_id` (ej. `owner_id`, `huarique_id`).
+* **Bases de Datos No Relacionales (MongoDB Atlas):**
+  * Nombres de colecciones en minúsculas autodescriptivas acordes a la carta dinámica (ej. `menu_diario`).
+  * Estructura de documentos JSON con atributos definidos de manera uniforme para su persistencia flexible.
+* **Caché en Memoria (Redis):**
+  * Patrón de nombres de claves estructurado para identificar de forma unívoca cada índice de celda H3 en el radar.
+
+**Control de Versiones (Git y Conventional Commits)**
+Toda modificación en el código fuente o documentación debe reflejarse mediante mensajes de commit estandarizados que sigan la especificación de *Conventional Commits*:
+* **Formato base:** `tipo(alcance): descripción breve en minúsculas`.
+* **Tipos permitidos:**
+  * `feat:` Adición de una nueva funcionalidad al producto (ej. integración de librería H3).
+  * `fix:` Corrección de errores o fallos en el código.
+  * `docs:` Modificaciones exclusivas en la documentación o en los archivos del informe.
+  * `refactor:` Reestructuración de código que no altera su comportamiento funcional.
+  * `chore:` Tareas de mantenimiento, actualización de dependencias o configuración del entorno.
+
+<br>
+
+##### 5.2.4 Software Deployment Configuration
+
+Para garantizar la correcta entrega continua y alta disponibilidad del ecosistema **Foodly**, los distintos componentes se estructuran mediante flujos automatizados de despliegue y contenerización.
+
+<div style="text-align: center;">
+  <img src="assets/images/chapter-5/deployment-configuration.png" alt="Deployment Configuration Foodly" style="width: 100%; height: auto; border-radius: 8px;" />
+  <p><em>Figura Z: Software Deployment & Containerization Configuration — Foodly</em></p>
+</div>
+<br>
+
+*aqui se van a colocar las fotos del despliegue, wip*
+
+
+
+
+
+
+
 ### Conclusiones
 ### Conclusiones y recomendaciones
 * **AV1:**
