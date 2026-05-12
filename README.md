@@ -2054,6 +2054,14 @@ A continuación, se presentan los commits realizados por los integrantes del gru
 
 <img src="assets/images/chapter-5/contributors_evidence_team.png" alt="team collaboration insights" style="width: 100%; height: auto; border-radius: 8px;" />
 
+###### 5.3.1.8	Kanban Board
+
+Para este punto implementamos un tablero Kanban utilizando Trello. Esta herramientapermitió al equipo organizar las tareas del Sprint Backlog, visualizar el progreso y facilitar lacolaboración. Trello se adaptó a nuestras necesidades específicas, mejorando la eficiencia y lacomunicación dentro del equipo.
+
+Adjunto link del Trello:
+
+<img src="assets/images/chapter-5/kanban_board_cap5.png" alt="Kanban Board" style="width: 60%; height: auto; border-radius: 8px;" />
+
 ### Conclusiones
 ### Conclusiones y recomendaciones
 * **AV1:**
