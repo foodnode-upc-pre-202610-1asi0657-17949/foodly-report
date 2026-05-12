@@ -1829,29 +1829,48 @@ En esta sección se describe la organización estructural del código fuente den
 
 La estructura interna de los microservicios de Foodly evoluciona de una arquitectura de capas tradicional hacia una Arquitectura Hexagonal, organizando el código en tres áreas concéntricas:
 
-* Domain Layer: Contiene las Entidades (ej. Huarique, Plato), Value Objects (ej. Coordenadas, Precio) y Domain Services. Esta capa representa el corazón del negocio y es agnóstica a la tecnología; no conoce nada de WildFly, bases de datos o APIs externas.
-* Application Layer: Actúa como mediador. Aquí residen los Ports (interfaces) y los casos de uso (ej. RegistrarMenu). Coordina el flujo de información entre el exterior y el dominio sin conocer detalles de implementación.
-* Infrastructure Layer (El Exterior): Es donde residen los Adapters que conectan el sistema con el mundo real:
-* Rest Adapters: Controladores JAX-RS que exponen los servicios a la web en Vue.js.
-* Persistence Adapters: Implementaciones de los puertos de salida para MySQL, MongoDB y el caché de alta velocidad en Redis.
-* Integration Adapters: Clientes técnicos para el consumo de servicios externos como Cloudinary (imágenes) y Mapbox (mapas).
+* Domain Layer: Contendrá las Entidades (ej. Huarique, Plato), Value Objects (ej. Coordenadas, Precio) y Domain Services. Esta capa representará el corazón del negocio sin conocer las tecnologías, ni WildFly, bases de datos o APIs externas.
+* Application Layer: Actuará como mediador. Aquí residen los Ports (interfaces) y los casos de uso (ej. RegistrarMenu). Asimismo, coordinará el flujo de información entre el exterior y el dominio sin conocer detalles de implementación.
+* Infrastructure Layer (El Exterior): Es donde residirán los Adapters que conectan el sistema con el mundo real:
+* Rest Adapters: Controladores JAX-RS que expondrán los servicios a la web en Vue.js.
+* Persistence Adapters: Serán implementaciones de los puertos de salida para MySQL, MongoDB y el caché de alta velocidad en Redis.
+* Integration Adapters: Serán clientes técnicos para el consumo de servicios externos como Cloudinary (imágenes) y Mapbox (mapas).
 
 ##### 5.1.3 Pattern Based Custom Software Library
-Se describe la organización estructural del código fuente dentro de cada microservicio. Se utiliza un enfoque de arquitectura en capas y patrones de transferencia de datos para asegurar que las responsabilidades de cada componente estén claramente definidas y aisladas.
-La estructura interna de los microservicios de Foodly evoluciona de una arquitectura de capas tradicional hacia una Arquitectura Hexagonal, organizando el código en tres áreas concéntricas según los principios de DDD:
+Se describe el diseño de la librería personalizada Foodly.Shared.Core, la cual actuará como un núcleo reutilizable para todos los microservicios. Esta librería centralizará componentes de dominio, utilidades técnicas y la implementación de patrones de diseño aprobados para asegurar la coherencia del sistema.
 
-* Domain Layer (El Núcleo): Es el centro de la imagen adjunta. Contiene las Entidades (ej. Huarique, Plato), Value Objects (ej. Coordenadas, Precio) y Domain Services. Esta capa no conoce nada de WildFly, MySQL o APIs externas; solo contiene reglas de negocio puras.
+Para optimizar el desarrollo y garantizar la integridad de la arquitectura distribuida, se implementará una librería de software que incluirá los siguientes módulos y patrones:
 
-* Application Layer: Actúa como mediador. Aquí residen los Ports (interfaces) y los casos de uso (ej. RegistrarMenu). Coordina cómo fluye la información sin saber quién es el cliente final (si es una web o una prueba).
+Bibliotecas y Módulos a Desarrollar:
+* Shared Domain Components:
+  * BaseRepository<T>: Implementación genérica del patrón Repository utilizando JPA/Hibernate para operaciones CRUD comunes.
+  * GenericSpecification<T>: Módulo para la construcción de consultas dinámicas y filtrado de huariques.
+  * NamingUtils: Utilidades para la transformación de strings y normalización de datos (ej. KebabCase para URLs).
+  * PersistenceConfig: Configuración reutilizable de la unidad de persistencia para Jakarta Persistence.
 
-* Infrastructure Layer (El Exterior): Aquí implementamos los Adapters. Es donde el código "toca" el mundo real:
+Patrones de Diseño Aplicados:
+1. Generic Repository Pattern:
+  * El BaseRepository<T> permitirá realizar operaciones de persistencia genéricas para cualquier entidad de dominio (Plato, Usuario, Local).
+  * Será reutilizable entre los diferentes Bounded Contexts (Geo-Radar, Business, Identity).
 
-* Rest Adapters: Controladores JAX-RS que reciben peticiones de Vue.js.
+2. Interceptor Pattern:
+  * LoggingInterceptor para interceptar llamadas a los servicios de negocio mediante Jakarta Interceptors.
+  * Permitirá una configuración centralizada del registro de eventos según las necesidades de auditoría.
 
-* Persistence Adapters: Repositorios JPA/Hibernate que guardan en MySQL o MongoDB.
+3. Adapter Pattern:
+  * SecurityAdapter para la validación uniforme de los Tokens de Sesión (UUID) en todos los microservicios.
+  * MapboxAdapter y CloudinaryAdapter para estandarizar la comunicación con servicios externos.
 
-* Integration Adapters: Clientes que llaman a Cloudinary o Mapbox.
+4. Module Pattern:
+  * Componentes organizados bajo el espacio de nombres pe.edu.upc.foodly.shared.*.
+  * Garantizará una separación clara entre las interfaces de infraestructura y el núcleo del dominio.
 
+Gestión de Versionado:
+* Estrategia:
+  * Se aplicará un versionado semántico implícito basado en el empaquetado de archivos .jar.
+  * La separación por capas (Arquitectura Hexagonal) evitará cambios disruptivos (breaking changes) al modificar la infraestructura.
+  * Se mantendrán interfaces estables en la capa de aplicación para asegurar la compatibilidad hacia atrás entre microservicios.
+  
 
 ##### 5.1.4 Framework Pattern Driven Refactoring Report
 En esta sección se explica cómo el uso de un framework formal (Jakarta EE/WildFly) obligó al equipo a escribir código más ordenado y profesional.
