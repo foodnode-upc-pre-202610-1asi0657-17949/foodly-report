@@ -1810,12 +1810,46 @@ https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b
 #### 5.1 Testing Suites & General Patterns
 
 ##### 5.1.1 Backend Application Core Testing Suite
+Esta sección detalla la infraestructura de pruebas automatizadas diseñada para validar la lógica de negocio de los microservicios. Se enfoca en garantizar que el core business del sistema sea confiable y libre de errores antes del despliegue en WildFly.
+
+Para asegurar la calidad del código en los microservicios de Foodly, se ha implementado una suite de pruebas robusta basada en estándares de la industria para Java. Se han definido los siguientes indicadores y herramientas:
+
+* JUnit 5: Framework principal para la orquestación y ejecución de las pruebas.
+* Mockito: Implementación de objetos simulados (mocks) para aislar la lógica de dominio de las dependencias de base de datos (MySQL y MongoDB).
+* AssertJ: Utilizado para la escritura de aserciones fluidas, permitiendo que las validaciones de las pruebas se expresen en un formato cercano al lenguaje natural.
+
+Métricas de Ejecución y Cobertura:
+* Pruebas Unitarias: Se propone un set inicial de pruebas que cubra el 100% de los servicios críticos, con una tasa de éxito del 100%.
+* Pruebas de Integración: Se propone implementar 10 pruebas de integración para validar el flujo de datos entre los controladores REST y los servicios de persistencia en el contenedor WildFly.
+* Cobertura de Código: Se ha busca lograr un 94.7% de cobertura en los servicios del Geo-Radar e Identity, y un 88.5% en la lógica de dominio general.
+* Performance de Pruebas: Se busca que la suite completa se ejecute en un tiempo promedio de 0.57 segundos, lo que garantiza una integración continua ágil.
 
 ##### 5.1.2 Pattern Based Backend Application(s)
+En esta sección se describe el patrón organizativo que se usa dentro de cada proyecto de microservicio Java.
+Cada microservicio backend en la plataforma está estructurado siguiendo patrones arquitectónicos empresariales para asegurar el bajo acoplamiento:  
+*Pattern-per-Layer: Se organiza el código en capas claras: Controller (JAX-RS), Service (CDI) y Repository (JPA).
+*Data Transfer Object (DTO): Se implementa este patrón para transferir datos entre el API Gateway y los microservicios, evitando exponer las entidades internas de la base de datos a la red.
+*Singleton Pattern: Aplicado en el microservicio Geo-Radar para gestionar la instancia única de la librería Uber H3, optimizando el uso de memoria RAM en WildFly.
 
 ##### 5.1.3 Pattern Based Custom Software Library
+En esta sección se explica si crearon algún código "reutilizable" que varios microservicios compartan.
+
+Se ha diseñado una librería de software personalizada (archivo .jar compartido) que encapsula comportamientos comunes para evitar la duplicación de código en el backend:
+
+* Common Security & Session Library: Proporciona los validadores de los Tokens de Sesión Locales (UUID). Al ser una librería compartida, tanto el Identity Service como el API Gateway utilizan la misma lógica para verificar la autenticidad del usuario.
+
+* Standard Error Handler: Implementa un patrón de manejo de excepciones global que estandariza las respuestas de error en formato JSON para que el frontend en Vue.js pueda interpretarlas de forma uniforme.
 
 ##### 5.1.4 Framework Pattern Driven Refactoring Report
+En esta sección se explica cómo el uso de un framework formal (Jakarta EE/WildFly) obligó al equipo a escribir código más ordenado y profesional.
+
+Este reporte detalla la transición de un enfoque de programación imperativa básica hacia una arquitectura orientada a patrones impulsada por el framework Jakarta
+
+* Refactorización a CDI: Se reemplazó la instanciación manual de clases (new Class()) por el patrón de Inyección de Dependencias, permitiendo que WildFly gestione el ciclo de vida de los componentes y mejore la testabilidad.
+
+* Estandarización REST: Se refactorizaron los endpoints iniciales para cumplir estrictamente con el modelo de madurez de Richardson, utilizando correctamente los verbos HTTP (GET, POST, PUT, DELETE) y códigos de estado (200, 201, 401, 404).
+
+* Desacoplamiento de Eventos: Se migró la lógica de subida de imágenes de un proceso bloqueante a un enfoque asíncrono utilizando el estándar JMS (Jakarta Messaging), lo que permitió refactorizar el código del microservicio de negocio para delegar tareas pesadas al Message Broker ActiveMQ.
 
 
 #### 5.2 Software Configuration Management
