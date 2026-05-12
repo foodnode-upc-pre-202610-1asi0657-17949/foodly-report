@@ -1873,15 +1873,20 @@ Gestión de Versionado:
   
 
 ##### 5.1.4 Framework Pattern Driven Refactoring Report
-En esta sección se explica cómo el uso de un framework formal (Jakarta EE/WildFly) obligó al equipo a escribir código más ordenado y profesional.
+El desarrollo de la plataforma Foodly seguirá un proceso de mejora continua basado en las capacidades del framework. Se han identificado los siguientes puntos de refactorización para alinear el software con los estándares correspondientes:
 
-Este reporte detalla la transición de un enfoque de programación imperativa básica hacia una arquitectura orientada a patrones impulsada por el framework Jakarta
-
-* Refactorización a CDI: Se reemplazó la instanciación manual de clases (new Class()) por el patrón de Inyección de Dependencias, permitiendo que WildFly gestione el ciclo de vida de los componentes y mejore la testabilidad.
-
-* Estandarización REST: Se refactorizaron los endpoints iniciales para cumplir estrictamente con el modelo de madurez de Richardson, utilizando correctamente los verbos HTTP (GET, POST, PUT, DELETE) y códigos de estado (200, 201, 401, 404).
-
-* Desacoplamiento de Eventos: Se migró la lógica de subida de imágenes de un proceso bloqueante a un enfoque asíncrono utilizando el estándar JMS (Jakarta Messaging), lo que permitió refactorizar el código del microservicio de negocio para delegar tareas pesadas al Message Broker ActiveMQ.
+* Refactorización de Dependencias (CDI Pattern):
+  * Estado Inicial: Uso de instanciación manual mediante el operador new dentro de los controladores.
+  * Refactorización: Se implementará la inyección de dependencias mediante Contexts and Dependency Injection (CDI). El uso de la anotación @Inject permitirá que el contenedor WildFly gestione el ciclo de vida de los servicios, facilitando la realización de pruebas unitarias con Mockito.
+* Estandarización de Interfaces REST (Richardson Maturity Model):
+  * Estado Inicial: Endpoints con nombres basados en verbos (ej: /crearPlato) y parámetros desordenados.
+  * Refactorización: Se migrarán todos los controladores al estándar JAX-RS, utilizando una estructura de URIs basada en recursos (ej: POST /restaurantes/{id}/platos). Esto asegurará que el sistema sea fácil de integrar con el frontend en Vue.js y con servicios externos.
+* Refactorización hacia la Arquitectura Hexagonal:
+  * Estado Inicial: Lógica de negocio mezclada con llamadas directas a la base de datos (SQL/Mongo).
+  * Refactorización: Se aplicará el desacoplamiento mediante la creación de Ports (interfaces) y Adapters. Al mover Redis y JPA a la capa de infraestructura, se garantizará que el dominio sea puro y no dependa de tecnologías externas, mejorando la modificabilidad.
+* Manejo de Operaciones Asíncronas (JMS):
+  * Estado Inicial: Procesos de subida de imágenes y cálculos pesados que bloquean la interfaz del usuario.
+  * Refactorización: Se desplegará un esquema basado en mensajes utilizando ActiveMQ. Las tareas de larga duración se refactorizarán para ser procesadas de forma asíncrona, mejorando drásticamente el atributo de calidad de Performance.
 
 
 #### 5.2 Software Configuration Management
