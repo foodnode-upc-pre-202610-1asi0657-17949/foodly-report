@@ -2040,14 +2040,19 @@ https://foodnode-upc-pre-202610-1asi0657-17949.github.io/foodly-landing-page/
 
 A continuación, se adjuntan las capturas que evidencian la correcta configuración del repositorio y la disponibilidad de la interfaz desplegada:
 
-<img src="assets/images/chapter-5/landing_page.png" alt="Deployment Configuration Foodly" style="width: 100%; height: auto; border-radius: 8px;" />
+<img src="assets/images/chapter-5/landing_page.png" alt="landing deploy" style="width: 100%; height: auto; border-radius: 8px;" />
 
 ---
 
-<img src="assets/images/chapter-5/landing_page_evidence.png" alt="Deployment Configuration Foodly" style="width: 100%; height: auto; border-radius: 8px;" />
+<img src="assets/images/chapter-5/landing_page_evidence.png" alt="landing deploy evidence" style="width: 100%; height: auto; border-radius: 8px;" />
 
 ###### 5.3.1.7	Team Collaboration Insights during Sprint
 
+Durante el primer sprint del proyecto Foodly, el equipo utilizó Git y Visual Studio Code para el desarrollo de la aplicación. Para avanzar de forma rápida y práctica en esta etapa inicial, decidimos integrar nuestros cambios trabajando directamente sobre la rama develop, manteniendo el orden a través de mensajes claros en cada subida de código.
+
+A continuación, se presentan los commits realizados por los integrantes del grupo, evidenciando el trabajo en equipo y el avance de las tareas completadas durante este sprint:
+
+<img src="assets/images/chapter-5/contributors_evidence_team.png" alt="team collaboration insights" style="width: 100%; height: auto; border-radius: 8px;" />
 
 ### Conclusiones
 ### Conclusiones y recomendaciones
