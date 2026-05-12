@@ -1825,20 +1825,33 @@ Métricas de Ejecución y Cobertura:
 * Performance de Pruebas: Se busca que la suite completa se ejecute en un tiempo promedio de 0.57 segundos, lo que garantiza una integración continua ágil.
 
 ##### 5.1.2 Pattern Based Backend Application(s)
-En esta sección se describe el patrón organizativo que se usa dentro de cada proyecto de microservicio Java.
-Cada microservicio backend en la plataforma está estructurado siguiendo patrones arquitectónicos empresariales para asegurar el bajo acoplamiento:  
-*Pattern-per-Layer: Se organiza el código en capas claras: Controller (JAX-RS), Service (CDI) y Repository (JPA).
-*Data Transfer Object (DTO): Se implementa este patrón para transferir datos entre el API Gateway y los microservicios, evitando exponer las entidades internas de la base de datos a la red.
-*Singleton Pattern: Aplicado en el microservicio Geo-Radar para gestionar la instancia única de la librería Uber H3, optimizando el uso de memoria RAM en WildFly.
+En esta sección se describe la organización estructural del código fuente dentro de cada microservicio. Se utiliza un enfoque de Arquitectura Hexagonal y principios de Domain-Driven Design (DDD) para asegurar que las responsabilidades de cada componente estén aisladas.
+
+La estructura interna de los microservicios de Foodly evoluciona de una arquitectura de capas tradicional hacia una Arquitectura Hexagonal, organizando el código en tres áreas concéntricas:
+
+* Domain Layer: Contiene las Entidades (ej. Huarique, Plato), Value Objects (ej. Coordenadas, Precio) y Domain Services. Esta capa representa el corazón del negocio y es agnóstica a la tecnología; no conoce nada de WildFly, bases de datos o APIs externas.
+* Application Layer: Actúa como mediador. Aquí residen los Ports (interfaces) y los casos de uso (ej. RegistrarMenu). Coordina el flujo de información entre el exterior y el dominio sin conocer detalles de implementación.
+* Infrastructure Layer (El Exterior): Es donde residen los Adapters que conectan el sistema con el mundo real:
+* Rest Adapters: Controladores JAX-RS que exponen los servicios a la web en Vue.js.
+* Persistence Adapters: Implementaciones de los puertos de salida para MySQL, MongoDB y el caché de alta velocidad en Redis.
+* Integration Adapters: Clientes técnicos para el consumo de servicios externos como Cloudinary (imágenes) y Mapbox (mapas).
 
 ##### 5.1.3 Pattern Based Custom Software Library
-En esta sección se explica si crearon algún código "reutilizable" que varios microservicios compartan.
+Se describe la organización estructural del código fuente dentro de cada microservicio. Se utiliza un enfoque de arquitectura en capas y patrones de transferencia de datos para asegurar que las responsabilidades de cada componente estén claramente definidas y aisladas.
+La estructura interna de los microservicios de Foodly evoluciona de una arquitectura de capas tradicional hacia una Arquitectura Hexagonal, organizando el código en tres áreas concéntricas según los principios de DDD:
 
-Se ha diseñado una librería de software personalizada (archivo .jar compartido) que encapsula comportamientos comunes para evitar la duplicación de código en el backend:
+* Domain Layer (El Núcleo): Es el centro de la imagen adjunta. Contiene las Entidades (ej. Huarique, Plato), Value Objects (ej. Coordenadas, Precio) y Domain Services. Esta capa no conoce nada de WildFly, MySQL o APIs externas; solo contiene reglas de negocio puras.
 
-* Common Security & Session Library: Proporciona los validadores de los Tokens de Sesión Locales (UUID). Al ser una librería compartida, tanto el Identity Service como el API Gateway utilizan la misma lógica para verificar la autenticidad del usuario.
+* Application Layer: Actúa como mediador. Aquí residen los Ports (interfaces) y los casos de uso (ej. RegistrarMenu). Coordina cómo fluye la información sin saber quién es el cliente final (si es una web o una prueba).
 
-* Standard Error Handler: Implementa un patrón de manejo de excepciones global que estandariza las respuestas de error en formato JSON para que el frontend en Vue.js pueda interpretarlas de forma uniforme.
+* Infrastructure Layer (El Exterior): Aquí implementamos los Adapters. Es donde el código "toca" el mundo real:
+
+* Rest Adapters: Controladores JAX-RS que reciben peticiones de Vue.js.
+
+* Persistence Adapters: Repositorios JPA/Hibernate que guardan en MySQL o MongoDB.
+
+* Integration Adapters: Clientes que llaman a Cloudinary o Mapbox.
+
 
 ##### 5.1.4 Framework Pattern Driven Refactoring Report
 En esta sección se explica cómo el uso de un framework formal (Jakarta EE/WildFly) obligó al equipo a escribir código más ordenado y profesional.
