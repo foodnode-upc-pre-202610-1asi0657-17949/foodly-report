@@ -1810,9 +1810,9 @@ https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b
 #### 5.1 Testing Suites & General Patterns
 
 ##### 5.1.1 Backend Application Core Testing Suite
-Esta sección detalla la infraestructura de pruebas automatizadas diseñada para validar la lógica de negocio de los microservicios. Se enfoca en garantizar que el core business del sistema sea confiable y libre de errores antes del despliegue en WildFly.
+Esta sección detalla la infraestructura de pruebas automatizadas diseñada para validar la lógica de negocio de los microservicios. Se enfocará en garantizar que el core business del sistema sea confiable y libre de errores antes del despliegue en WildFly.
 
-Para asegurar la calidad del código en los microservicios de Foodly, se ha implementado una suite de pruebas robusta basada en estándares de la industria para Java. Se han definido los siguientes indicadores y herramientas:
+Para asegurar la calidad del código en los microservicios de Foodly, se implementará una suite de pruebas robusta basada en estándares de la industria para Java. De este modo se definieron: los siguientes indicadores y herramientas:
 
 * JUnit 5: Framework principal para la orquestación y ejecución de las pruebas.
 * Mockito: Implementación de objetos simulados (mocks) para aislar la lógica de dominio de las dependencias de base de datos (MySQL y MongoDB).
@@ -1831,13 +1831,13 @@ La estructura interna de los microservicios de Foodly evoluciona de una arquitec
 
 * Domain Layer: Contendrá las Entidades (ej. Huarique, Plato), Value Objects (ej. Coordenadas, Precio) y Domain Services. Esta capa representará el corazón del negocio sin conocer las tecnologías, ni WildFly, bases de datos o APIs externas.
 * Application Layer: Actuará como mediador. Aquí residen los Ports (interfaces) y los casos de uso (ej. RegistrarMenu). Asimismo, coordinará el flujo de información entre el exterior y el dominio sin conocer detalles de implementación.
-* Infrastructure Layer (El Exterior): Es donde residirán los Adapters que conectan el sistema con el mundo real:
-* Rest Adapters: Controladores JAX-RS que expondrán los servicios a la web en Vue.js.
-* Persistence Adapters: Serán implementaciones de los puertos de salida para MySQL, MongoDB y el caché de alta velocidad en Redis.
-* Integration Adapters: Serán clientes técnicos para el consumo de servicios externos como Cloudinary (imágenes) y Mapbox (mapas).
+* Infrastructure Layer: Es donde residirán los Adapters que conectan al sistema:
+  * Rest Adapters: Controladores JAX-RS que expondrán los servicios a la web en Vue.js.
+  * Persistence Adapters: Serán implementaciones de los puertos de salida para MySQL, MongoDB y el caché de alta velocidad en Redis.
+  * Integration Adapters: Serán clientes técnicos para el consumo de servicios externos como Cloudinary (imágenes) y Mapbox (mapas).
 
 ##### 5.1.3 Pattern Based Custom Software Library
-Se describe el diseño de la librería personalizada Foodly.Shared.Core, la cual actuará como un núcleo reutilizable para todos los microservicios. Esta librería centralizará componentes de dominio, utilidades técnicas y la implementación de patrones de diseño aprobados para asegurar la coherencia del sistema.
+En esta sección se describe el diseño de la librería personalizada Foodly.Shared.Core, la cual actuará como un núcleo reutilizable para todos los microservicios. De esta librería centralizará componentes de dominio, utilidades técnicas y la implementación de patrones de diseño aprobados para asegurar la coherencia del sistema.
 
 Para optimizar el desarrollo y garantizar la integridad de la arquitectura distribuida, se implementará una librería de software que incluirá los siguientes módulos y patrones:
 
