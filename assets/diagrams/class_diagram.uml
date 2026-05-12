@@ -1,0 +1,129 @@
+@startuml
+skinparam packageStyle rectangle
+skinparam roundcorner 20
+skinparam shadowing false
+skinparam linetype ortho
+
+' --- SHARED KERNEL / LIBRARY (Sección 5.1.3) ---
+package "pe.edu.upc.foodly.shared (Shared Library)" #F2F4F4 {
+    interface BaseRepository<T> <<Port>> {
+        + save(entity: T): void
+        + findById(id: UUID): T
+        + delete(id: UUID): void
+    }
+    
+    class GeoLocation <<ValueObject>> {
+        - latitude: Double
+        - longitude: Double
+    }
+    
+    class TokenSession <<ValueObject>> {
+        - uuid: String
+        - expiry: LocalDateTime
+    }
+
+    class CircuitBreakerInterceptor <<Interceptor>> {
+        + monitorCall(invocation: InvocationContext): Object
+    }
+}
+
+' --- IDENTITY & USER MANAGEMENT ---
+package "Identity Microservice" #FEF9E7 {
+    package "Identity.Domain" #FCF3CF {
+        class User <<Entity>> {
+            - id: UUID
+            - email: String
+            - passwordHash: String
+            - role: Role
+        }
+    }
+    package "Identity.Infrastructure" #F9E79F {
+        class AuthController <<RestAdapter>> {
+            + login(req: LoginDTO): Response
+        }
+        class UserMysqlAdapter <<PersistenceAdapter>> {
+            + findByEmail(email: String): User
+        }
+    }
+}
+
+' --- BUSINESS & MENU MANAGEMENT ---
+package "Business Microservice" #EAF2F8 {
+    package "Business.Domain" #D4E6F1 {
+        class Huarique <<AggregateRoot>> {
+            - id: UUID
+            - name: String
+            - menu: List<Plato>
+            + updateAvailability(): void
+        }
+        class Plato <<Entity>> {
+            - id: UUID
+            - name: String
+            - price: Money
+        }
+    }
+    package "Business.Application" #AED6F1 {
+        interface IMenuService <<Port>> {
+            + registerPlato(id: UUID, p: Plato): void
+        }
+    }
+    package "Business.Infrastructure" #85C1E9 {
+        class RestaurantController <<RestAdapter>>
+        class HuariqueMongoAdapter <<PersistenceAdapter>>
+        class ActiveMqPublisher <<IntegrationAdapter>> {
+            + notifyNewMenu(h: Huarique): void
+        }
+    }
+}
+
+' --- GEO-RADAR ENGINE ---
+package "Geo-Radar Microservice" #E9F7EF {
+    package "Radar.Domain" #D5F5E3 {
+        class H3Engine <<DomainService>> {
+            + latLngToH3(lat: Double, lng: Double): String
+            + kRing(h3Index: String, radius: int): List<String>
+        }
+    }
+    package "Radar.Infrastructure" #ABEBC6 {
+        class RadarRedisAdapter <<PersistenceAdapter>> {
+            - jedis: JedisClient
+            + getHuariquesInH3(index: String): List<HuariqueDTO>
+        }
+        class RadarController <<RestAdapter>> {
+            + searchNearby(lat: Double, lng: Double): List<HuariqueDTO>
+        }
+    }
+}
+
+' --- INTEGRATION SYSTEM (ACL) ---
+package "Integration System" #F4ECF7 {
+    class MapboxAdapter <<Adapter>> {
+        + getRoute(origin: GeoLocation, dest: GeoLocation): RouteDTO
+    }
+    class CloudinaryAdapter <<Adapter>> {
+        + uploadImage(file: byte[]): String
+    }
+}
+
+' --- RELACIONES E INYECCIÓN (CORREGIDO) ---
+' Herencia de puertos genéricos
+UserMysqlAdapter ..|> BaseRepository
+HuariqueMongoAdapter ..|> BaseRepository
+
+' Dependencias de Shared Core
+User --> TokenSession
+Huarique --> GeoLocation
+RadarController --> GeoLocation
+
+' Comunicaciones entre capas
+RestaurantController --> IMenuService
+IMenuService --> HuariqueMongoAdapter
+IMenuService --> ActiveMqPublisher
+
+' Comunicaciones de integración
+ActiveMqPublisher ..> RadarRedisAdapter : "Async Update (ActiveMQ)"
+RadarController --> H3Engine
+RadarController --> RadarRedisAdapter
+RadarController --> MapboxAdapter
+
+@enduml
