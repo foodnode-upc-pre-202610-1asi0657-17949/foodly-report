@@ -2029,7 +2029,23 @@ Para garantizar la correcta entrega continua y alta disponibilidad del ecosistem
 ###### 5.3.1.3	Testing Suite Evidence for Sprint Review
 ###### 5.3.1.4	Execution Evidence for Sprint Review
 ###### 5.3.1.5	Microservices Documentation Evidence for Sprint Review
+
 ###### 5.3.1.6	Software Deployment Evidence for Sprint Review
+
+Como parte de las actividades de integración y entrega de este Sprint, la Landing Page promocional e informativa de Foodly ha sido desplegada exitosamente en un entorno de producción. Para este fin, se ha utilizado la infraestructura de alojamiento de GitHub Pages, lo que nos permite mantener un flujo de entrega continua sincronizado directamente con nuestro repositorio de código fuente, garantizando así alta disponibilidad y tiempos de carga óptimos.
+
+El sitio web se encuentra completamente operativo y es de acceso público a través del siguiente enlace oficial:
+
+https://foodnode-upc-pre-202610-1asi0657-17949.github.io/foodly-landing-page/
+
+A continuación, se adjuntan las capturas que evidencian la correcta configuración del repositorio y la disponibilidad de la interfaz desplegada:
+
+<img src="assets/images/chapter-5/landing_page.png" alt="Deployment Configuration Foodly" style="width: 100%; height: auto; border-radius: 8px;" />
+
+---
+
+<img src="assets/images/chapter-5/landing_page_evidence.png" alt="Deployment Configuration Foodly" style="width: 100%; height: auto; border-radius: 8px;" />
+
 ###### 5.3.1.7	Team Collaboration Insights during Sprint
 
 
