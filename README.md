@@ -2061,7 +2061,8 @@ Estos gráficos reflejan que todos los integrantes del equipo han realizado apor
 Para este punto implementamos un tablero Kanban utilizando Trello. Esta herramientapermitió al equipo organizar las tareas del Sprint Backlog, visualizar el progreso y facilitar lacolaboración. Trello se adaptó a nuestras necesidades específicas, mejorando la eficiencia y lacomunicación dentro del equipo.
 
 Adjunto link del Trello:
-https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b53ed07c7e7F9CD517/kanban-board
+
+- https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b53ed07c7e7F9CD517/kanban-board
 
 <img src="assets/images/chapter-5/kanban_board_cap5.png" alt="Kanban Board" style="width: 40%; height: auto; border-radius: 10px;" />
 
