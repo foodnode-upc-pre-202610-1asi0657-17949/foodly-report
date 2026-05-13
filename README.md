@@ -2024,8 +2024,33 @@ Para garantizar la correcta entrega continua y alta disponibilidad del ecosistem
 
 #### 5.3	Microservices Implementation
 ##### 5.3.1	Sprint 1
-###### 5.3.1.1	Sprint Backlog 1
+
+El primer Sprint de Foodly se definió como la etapa de "Foundation & UX Design". El objetivo principal fue establecer la arquitectura base del backend y diseñar los flujos críticos de la Landing Page y el Prototipo funcional para asegurar que la propuesta de valor de FoodNode sea técnicamente viable y atractiva para los usuarios.
+
+###### 5.3.1.1 Sprint Backlog 1
+
+| ID Tarea | Tarea de Diseño / Desarrollo | Tipo | Relación con Backlog | Responsable | Estimación (SP) |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| **T1.1** | Diseño y despliegue de la Landing Page oficial de la startup FoodNode. | UX/UI | **EP02** - Gestión de Identidad | Julca Minaya, Sergio Gino | 3 |
+| **T1.2** | Configuración de la estructura de microservicios y capas (Arquitectura Hexagonal/Shared Core) en el backend. | Backend | **TS02** - Persistencia Geoespacial | Villanueva Andrade, Ysaac Ligorio | 5 |
+| **T1.3** | Prototipado de alta fidelidad del Radar de proximidad H3 (Interfaz del Comensal Explorador). | UX/UI | **US01** - Visualización de Radar H3 | Cacho Seminario, Diego Alonso | 8 |
+| **T1.4** | Definición del esquema de base de datos políglota e implementación del `FoodlyDataSeeder` para carga de datos iniciales. | Backend | **TS02, TS03** | Vega Coronado, Fabricio Samir | 5 |
+| **T1.5** | Diseño de flujos de interacción para la búsqueda por antojo y aplicación de filtros de sazón y presupuesto. | UX/UI | **US03, US07, US10** | Urrutia Peña, Jasmin Adriana | 5 |
+
+
+
 ###### 5.3.1.2	Development Evidence for Sprint Review
+
+Como evidencia del avance en el desarrollo del backend durante el Sprint 1, se presenta la estructura base del proyecto Foodly_Backend. En la captura se puede observar la implementación física de los conceptos de diseño detallados en el Capítulo IV:
+
+Implementación de Microservicios: Se visualiza la separación de carpetas por contextos delimitados, incluyendo Auth, Business, GeoRadar, Identity, e Integration.
+
+Arquitectura Hexagonal (Shared Core): La carpeta Shared muestra la división entre Domain e Infrastructure, cumpliendo con el patrón de desacoplamiento para la persistencia y servicios externos.
+
+Gestión de Infraestructura: Se evidencia la creación del AppDbContext.cs para la persistencia relacional y el GeoLocationService.cs para la integración con la lógica geoespacial.
+
+Contenerización: Se observa el archivo Dockerfile y la integración de la librería h3, lo que confirma que el sistema está preparado para despliegues escalables y el uso de indexación hexagonal.
+
 ###### 5.3.1.3	Testing Suite Evidence for Sprint Review
 ###### 5.3.1.4	Execution Evidence for Sprint Review
 ###### 5.3.1.5	Microservices Documentation Evidence for Sprint Review
