@@ -2120,6 +2120,18 @@ A continuación, se adjuntan las capturas que evidencian la correcta configuraci
 
 <img src="assets/images/chapter-5/landing_page_evidence.png" alt="landing deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
 
+---
+
+DATABASE :
+
+<img src="assets/images/chapter-5/DATABASE.jpg" alt="DATABASE" style="width: 60%; height: auto; border-radius: 8px;" />
+
+---
+
+BACKEND :
+
+<img src="assets/images/chapter-5/BACKEND.jpg" alt="BACKEND" style="width: 60%; height: auto; border-radius: 8px;" />
+
 ###### 5.3.1.7	Team Collaboration Insights during Sprint
 
 Estos gráficos reflejan que todos los integrantes del equipo han realizado aportes significativos a lo largo de las semanas que duró el Sprint. A continuación, se evidencia la participación activa en los dos repositorios principales gestionados durante esta entrega: el repositorio dedicado a la documentación del proyecto y el de la página promocional.
@@ -2149,6 +2161,10 @@ Foodly atiende una necesidad concreta en el entorno gastronómico y urbano, ofre
 El diseño arquitectónico de Foodly se ha desarrollado con un enfoque claro en la alta disponibilidad, el rendimiento y la modificabilidad, utilizando patrones y tácticas que garantizan una plataforma robusta y escalable. La adopción de una arquitectura de microservicios desacoplada, junto con la implementación de un sistema de caché en memoria para optimizar las consultas geoespaciales, asegura que los usuarios puedan acceder a la información de manera rápida y confiable incluso durante picos de tráfico. Además, el uso de una persistencia políglota permite que cada microservicio maneje su propia base de datos, facilitando futuras modificaciones sin afectar la estabilidad del sistema. En conjunto, estas decisiones arquitectónicas posicionan a Foodly como una solución tecnológica sólida para abordar los desafíos específicos del sector gastronómico local.
 
 ### Video About-The-Team
+
+Link del video About the Team : 
+
+https://youtu.be/z09QmwU_QcA
 
 ### Referencias Bibliográficas
 
