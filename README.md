@@ -2156,13 +2156,14 @@ Adjunto link del Trello:
 En el segundo Sprint de Foodly el objetivo central de esta iteración fue implementar físicamente la separación de responsabilidades diseñada en las iteraciones ADD del Capítulo IV, codificando los microservicios de Identidad, Comunidad y el motor Geo-Radar, junto con el desarrollo de la interfaz de usuario interactiva para el descubrimiento de restaurantes tradicionales.
 
 ###### 5.3.2.1 Sprint Backlog 2
+
 | ID Tarea | Tarea de Diseño / Desarrollo | Tipo | Relación con Backlog | Responsable | Estimación (SP) |
 | :--- | :--- | :--- | :--- | :--- | :---: |
 | **T2.1** | Desarrollo del microservicio **Identity & Access** con persistencia relacional en MySQL para gestión de tokens. | Backend | **EP02 / US02** | Urrutia Peña, Jasmin Adriana | 5 |
-| **T2.2** | Implementación del motor matemático en el **GeoRadar Service** usando los bindings de la librería Uber H3. | Backend | **EP01 / US01 / TS01** | Julca Minaya, Sergio Gino | 8 |
-| **T2.3** | Implementación del **Community Service** para persistencia de reseñas y sistema de favoritos. | Backend | **EP04 / US08 / US12** | Vega Coronado, Fabricio Samir | 5 |
-| **T2.4** | Desarrollo del **Business Service** para la gestión del perfil comercial, menús y contratos de los huariques independientes. | Backend | **EP03 / US05 / TS03** | Villanueva Andrade, Ysaac Ligorio | 5 |
-| **T2.5** | Construcción de las vistas del Frontend en Vue.js (Vista del Radar Hexagonal, Login y Perfil de Restaurante). | Frontend | **US01 / US03 / US07** | Cacho Seminario, Diego Alonso | 8 |
+| **T2.2** | Implementación del **Community Service** para persistencia de reseñas y sistema de favoritos. | Backend | **EP04 / US08 / US12** | Vega Coronado, Fabricio Samir | 5 |
+| **T2.3** | Desarrollo del **Business Service** para la gestión del perfil comercial, menús y contratos de los huariques independientes. | Backend | **EP03 / US05 / TS03** | Julca Minaya, Sergio Gino | 5 |
+| **T2.4** | Construcción de las vistas del Frontend en Vue.js (Vista del Cliente). | Frontend | **US01 / US03** | Villanueva Andrade, Ysaac Ligorio| 5 |
+| **T2.5** | Implementación de interfaces Frontend en Vue.js para la gestión del Perfil del Restaurante y el historial de contratos. | Frontend | **US05 / US07** | Cacho Seminario, Diego Alonso | 5 |
 
 ---
 ###### 5.3.2.2	Development Evidence for Sprint Review
