@@ -31,7 +31,7 @@
 
 
 <div style="text-align: center;">
-    <h4 style="text-align: center">Lima – abril 2026</h4>
+    <h4 style="text-align: center">Lima – Junio 2026</h4>
 </div>
 
 
