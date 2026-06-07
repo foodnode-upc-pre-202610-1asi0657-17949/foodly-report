@@ -2167,12 +2167,35 @@ En el segundo Sprint de Foodly el objetivo central de esta iteración fue implem
 
 ---
 ###### 5.3.2.2	Development Evidence for Sprint Review
+
+Durante el Sprint 2, el equipo se enfocó en materializar la separación de responsabilidades diseñada en el Capítulo IV. Se trabajó mediante la estrategia de GitFlow en los repositorios correspondientes al Frontend y Backend:
+
+*   **Backend (Java/WildFly):** Se implementó la persistencia relacional en MySQL para el microservicio `Identity & Access` (gestión de tokens y autenticación) y el `Community Service` (reseñas y favoritos). Paralelamente, se desarrolló el `Business Service` integrando MongoDB Atlas para la gestión de los menús dinámicos y perfiles comerciales de los huariques.
+*   **Frontend (Vue.js):** Se construyeron las vistas correspondientes al Comensal Explorador (búsqueda de locales y mapa) y al Dueño de Restaurante (panel de gestión de perfil, menú e historial de contratos).
+
 ###### 5.3.2.3	Testing Suite Evidence for Sprint Review
+
+
+
 ###### 5.3.2.4	Execution Evidence for Sprint Review
+
+
+
 ###### 5.3.2.5	Microservices Documentation Evidence for Sprint Review
+
+
+
 ###### 5.3.2.6	Software Deployment Evidence for Sprint Review
+
+
+
 ###### 5.3.2.7	Team Collaboration Insights during Sprint
+
+La colaboración durante el Sprint 2 fue fundamental para lograr la integración entre las bases de datos SQL y NoSQL con el Frontend. El equipo mantuvo sincronización constante utilizando WhatsApp y Discord para resolver bloqueos de despliegue. 
+En GitHub, se observó una distribución equitativa de commits, destacando la sinergia entre los encargados de la codificación del backend y quienes construyeron las vistas en Vue.js.
+
 ###### 5.3.2.8	Kanban Board
+
 
 
 ### Conclusiones
@@ -2182,6 +2205,9 @@ Foodly atiende una necesidad concreta en el entorno gastronómico y urbano, ofre
 
 * **AV2:**
 El diseño arquitectónico de Foodly se ha desarrollado con un enfoque claro en la alta disponibilidad, el rendimiento y la modificabilidad, utilizando patrones y tácticas que garantizan una plataforma robusta y escalable. La adopción de una arquitectura de microservicios desacoplada, junto con la implementación de un sistema de caché en memoria para optimizar las consultas geoespaciales, asegura que los usuarios puedan acceder a la información de manera rápida y confiable incluso durante picos de tráfico. Además, el uso de una persistencia políglota permite que cada microservicio maneje su propia base de datos, facilitando futuras modificaciones sin afectar la estabilidad del sistema. En conjunto, estas decisiones arquitectónicas posicionan a Foodly como una solución tecnológica sólida para abordar los desafíos específicos del sector gastronómico local.
+
+* **AV3:**
+Durante la entrega de este Avance 3, el equipo logró materializar de manera exitosa las decisiones arquitectónicas planteadas previamente, logrando una transición efectiva hacia la construcción de los microservicios correspondientes al Sprint 2. La implementación de la persistencia políglota, combinando MySQL para la gestión estructurada de identidad y comunidad, junto con MongoDB Atlas para la flexibilidad de los perfiles comerciales y menús dinámicos, demostró ser una decisión acertada para soportar las distintas naturalezas de los datos. Asimismo, la correcta integración de los flujos entre el Frontend en Vue.js y las APIs del Backend, sumado a la adopción de GitFlow y el despliegue de los componentes en la nube, permitieron un desarrollo organizado y trazable.
 
 ### Video About-The-Team
 
