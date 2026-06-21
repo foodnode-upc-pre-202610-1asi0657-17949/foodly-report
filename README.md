@@ -2093,9 +2093,6 @@ Contenerización: Se observa el archivo Dockerfile y la integración de la libre
 <img src="assets/images/chapter-5/microservicio3.png" alt="Modificabilidad Kanban Board" width="600"/><br>
 <img src="assets/images/chapter-5/microservicio4.png" alt="Modificabilidad Kanban Board" width="600"/><br>
 
--Microservicio Restaurants<br>
-<img src="assets/images/chapter-5/microservicios3.png" alt="Modificabilidad Kanban Board" width="600"/><br>
-<img src="assets/images/chapter-5/microservicio6.png" alt="Modificabilidad Kanban Board" width="600"/><br>
 
 ###### 5.3.1.5	Microservices Documentation Evidence for Sprint Review
 
@@ -2152,6 +2149,9 @@ Adjunto link del Trello:
 
 <img src="assets/images/chapter-5/kanban_board_cap5.png" alt="Kanban Board" style="width: 40%; height: auto; border-radius: 10px;" />##
 
+
+
+
 ##### 5.3.2	Sprint 2
 En el segundo Sprint de Foodly el objetivo central de esta iteración fue implementar físicamente la separación de responsabilidades diseñada en las iteraciones ADD del Capítulo IV, codificando los microservicios de Identidad, Comunidad y el motor Geo-Radar, junto con el desarrollo de la interfaz de usuario interactiva para el descubrimiento de restaurantes tradicionales.
 
@@ -2172,6 +2172,25 @@ Durante el Sprint 2, el equipo se enfocó en materializar la separación de resp
 
 *   **Backend (Java/WildFly):** Se implementó la persistencia relacional en MySQL para el microservicio `Identity & Access` (gestión de tokens y autenticación) y el `Community Service` (reseñas y favoritos). Paralelamente, se desarrolló el `Business Service` integrando MongoDB Atlas para la gestión de los menús dinámicos y perfiles comerciales de los huariques.
 *   **Frontend (Vue.js):** Se construyeron las vistas correspondientes al Comensal Explorador (búsqueda de locales y mapa) y al Dueño de Restaurante (panel de gestión de perfil, menú e historial de contratos).
+
+| Repositorio | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **foodly-frontend** | `main` | `a92a018` | first commit: upload frontend | *N/A* | Jun 6, 2026  |
+| **foodly-microservices** | `main` / `develop` | `aa2e9fa` | Merge pull request #8 from foodnode-upc-pre-202610-1asi0657-17949/develop | *N/A* | Jun 7, 2026 |
+| **foodly-microservices** | `main` / `develop` | `0de77d2` | fix .war | *N/A* | Jun 7, 2026 |
+| **foodly-microservices** | `main` / `develop` | `28d90d0` | Merge pull request #7 from foodnode-upc-pre-202610-1asi0657-17949/develop | *N/A* | Jun 7, 2026 |
+| **foodly-microservices** | `main` / `develop` | `c383fe8` | Merge pull request #6 from foodnode-upc-pre-202610-1asi0657-17949/feature/project-structure | *N/A* | Jun 7, 2026 |
+| **foodly-microservices** | `main` / `develop` | `725b4ea` | identity service refactor | *N/A* | Jun 7, 2026 |
+| **foodly-microservices** | `main` / `develop` | `a3fc678` | Merge pull request #5 from foodnode-upc-pre-202610-1asi0657-17949/feature/project-structure | *N/A* | Jun 6, 2026 |
+| **foodly-microservices** | `main` / `develop` | `283bca4` | clean export of .war packages to a wildfly | *N/A* | Jun 6, 2026 |
+| **foodly-microservices** | `main` / `develop` | `0100040` | Merge pull request #4 from foodnode-upc-pre-202610-1asi0657-17949/develop | *N/A* | Jun 6, 2026 |
+| **foodly-microservices** | `main` / `develop` | `b528be9` | Merge pull request #3 from foodnode-upc-pre-202610-1asi0657-17949/feature/project-structure | *N/A* | Jun 6, 2026 |
+| **foodly-microservices** | `main` / `develop` | `b740072` | fix community service | *N/A* | Jun 6, 2026 |
+| **foodly-microservices** | `main` / `develop` | `a608d0d` | Merge pull request #2 from foodnode-upc-pre-202610-1asi0657-17949/develop | *N/A* | Jun 6, 2026 |
+| **foodly-microservices** | `main` / `develop` | `c302031` | Merge pull request #1 from foodnode-upc-pre-202610-1asi0657-17949/feature/project-structure | *N/A* | Jun 6, 2026 |
+| **foodly-microservices** | `main` / `develop` | `007a104` | business service refactopr | *N/A* | Jun 6, 2026 |
+| **foodly-microservices** | `main` / `develop` | `5cce200` | initial commit | *N/A* | Jun 6, 2026 |
+
 
 ###### 5.3.2.3	Testing Suite Evidence for Sprint Review
 
@@ -2229,7 +2248,49 @@ FRONTEND:
 La colaboración durante el Sprint 2 fue fundamental para lograr la integración entre las bases de datos SQL y NoSQL con el Frontend. El equipo mantuvo sincronización constante utilizando WhatsApp y Discord para resolver bloqueos de despliegue. 
 En GitHub, se observó una distribución equitativa de commits, destacando la sinergia entre los encargados de la codificación del backend y quienes construyeron las vistas en Vue.js.
 
+![alt text](reportecolab1.png)
+
 ###### 5.3.2.8	Kanban Board
+
+Para este punto implementamos un tablero Kanban utilizando Trello. Esta herramientapermitió al equipo organizar las tareas del Sprint Backlog, visualizar el progreso y facilitar la colaboración. Trello se adaptó a nuestras necesidades específicas, mejorando la eficiencia y la comunicación dentro del equipo.
+
+
+Adjunto link del Trello:
+
+- https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b53ed07c7e7F9CD517/kanban-board
+
+
+##### 5.3.3 Sprint 3
+
+El tercer Sprint de Foodly se definió como la etapa de "Integration & Resilience". Tras consolidar en el Sprint 2 los microservicios core de Identity, Community y Bussiness, el objetivo de esta iteración fue completar la capa de integración con servicios externos (Cloudinary y Mapbox/OpenRouteService) a través del Integration System (ACL), implementar el Geo-Radar Engine con la indexación hexagonal H3 sobre Redis, e incorporar el Message Broker (ActiveMQ) para garantizar la comunicación asíncrona entre microservicios. Asimismo, se buscó finalizar las vistas del Frontend en Vue.js relacionadas con el radar de proximidad, las notificaciones y el flujo de subida de imágenes, dejando el ecosistema de Foodly listo para su validación integral y despliegue final en la nube.
+
+###### 5.3.3.1 Sprint Backlog 3
+
+| ID Tarea | Tarea de Diseño / Desarrollo | Tipo | Relación con Backlog | Responsable | Estimación (SP) |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| **T3.1** | Implementación del **Geo-Radar Engine Service** con integración de la librería H3 de Uber para indexación geoespacial hexagonal y cálculo de proximidad en Redis. | Backend | **US01 / US20 / TS04 / QA-03** | Julca Minaya, Sergio Gino | 8 |
+| **T3.2** | Desarrollo de interfaces y vistas del **Dashboard del Dueño** en Vue.js: gestión de perfil, menú dinámico, estadísticas de visualización y estado (Abierto/Cerrado). | Frontend | **US02 / US04 / US06 / US11 / US19** | Vega Coronado, Fabricio Samir | 8 |
+| **T3.3** | Refactorización del **Business Service con MongoDB Atlas** para persistencia del catálogo dinámico de platos y menús con actualización en tiempo real. | Backend | **TS03 / US04 / US07** | Villanueva Andrade, Ysaac Ligorio | 5 |
+| **T3.4** | Integración del servicio **Cloudinary** a través del Integration System (ACL) para carga asíncrona, optimización y distribución de imágenes de platos. | Backend | **TS03 / US04 / US05** | Urrutia Peña, Jasmin Adriana | 5 |
+| **T3.5** | Integración de **Mapbox/OpenRouteService** para cálculo de rutas de navegación a pie y renderización interactiva del mapa en la vista del Comensal. | Backend | **US05 / US09 / TS04** | Villanueva Andrade, Ysaac Ligorio | 5 |
+| **T3.6** | Implementación del **Integration System** como capa anticorrupción (ACL) unificada para gestionar todas las comunicaciones con APIs externas (Cloudinary y Mapbox). | Backend | **TS03 / QA-01** | Julca Minaya, Sergio Gino | 5 |
+| **T3.7** | Documentación técnica completa: diagramas de interacción entre servicios, guía de integración de H3, contrato de APIs y runbook de despliegue de microservicios. | Documentación | **TS01 / TS02 / TS03 / TS04 / TS05** | Cacho Seminario, Diego Alonso | 8 |
+
+###### 5.3.3.2	Development Evidence for Sprint Review
+
+
+###### 5.3.3.3	Testing Suite Evidence for Sprint Review
+
+###### 5.3.3.4	Execution Evidence for Sprint Review
+
+###### 5.3.3.5	Microservices Documentation Evidence for 
+
+###### 5.3.3.6	Software Deployment Evidence for Sprint Review
+
+###### 5.3.3.7	Team Collaboration Insights during Sprint
+
+
+###### 5.3.3.8	Kanban Board
 
 Para este punto implementamos un tablero Kanban utilizando Trello. Esta herramientapermitió al equipo organizar las tareas del Sprint Backlog, visualizar el progreso y facilitar la colaboración. Trello se adaptó a nuestras necesidades específicas, mejorando la eficiencia y la comunicación dentro del equipo.
 
