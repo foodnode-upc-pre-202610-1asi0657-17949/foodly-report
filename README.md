@@ -2175,19 +2175,54 @@ Durante el Sprint 2, el equipo se enfocó en materializar la separación de resp
 
 ###### 5.3.2.3	Testing Suite Evidence for Sprint Review
 
+Para validar la correcta integración de los componentes lógicos y de infraestructura de la Arquitectura Hexagonal, se ejecutó una suite de pruebas de integración y comportamiento basada en el consumo de la API REST del microservicio Identity & Access
 
+![alt text](image.png)
 
 ###### 5.3.2.4	Execution Evidence for Sprint Review
 
+Como evidencia de la correcta ejecución e integración del ecosistema de software durante el Sprint 2, se registran las trazas del servidor de aplicaciones y la verificación de la persistencia políglota:
 
+Se evidencia la inicialización y el despliegue exitoso de los componentes en la consola de administración de WildFly. Las trazas en el archivo server.log confirman el mapeo de los contextos RESTful y el despliegue sin errores de los artefactos del backend: foodly-identity-service.war, foodly-business-service.war y foodly-community-service.war.
+
+Por otro lado, se constata el correcto funcionamiento del microservicio Identity & Access mediante una consulta directa a la base de datos identity_db.
+
+![alt text](ExecutionMicroServices.png)
+![alt text](Execution-DB.png)
 
 ###### 5.3.2.5	Microservices Documentation Evidence for Sprint Review
 
+Para asegurar la correcta integración del ecosistema distribuido y facilitar el consumo técnico de las APIs desde el Frontend, cada componente backend expone su propia documentación y contratos de servicio. A través de la consola de administración de WildFly.
 
+![alt text](DeployMicroServices.png)
 
 ###### 5.3.2.6	Software Deployment Evidence for Sprint Review
 
+Como evidencia del despliegue y empaquetado de la solución orientada a microservicios en el entorno del servidor de aplicaciones empresarial WildFly, se constata que los siguientes artefactos se encuentran desplegados, habilitados (enabled) y en estado operativo (OK):
 
+foodly-business-service.war: Módulo encargado de las operaciones de gestión comercial y menús dinámicos, exponiendo el contexto raíz /foodly-business-service.
+
+foodly-community-service.war: Componente responsable del backend transaccional para el manejo de interacciones sociales, favoritos y reseñas verificadas bajo el contexto raíz /foodly-community-service.
+
+foodly-identity-service.war: Servicio centralizado de autenticación, control de accesos y seguridad del ecosistema expuesto en /foodly-identity-service.
+
+mysql-connector-j-9.7.0.jar: Driver conector de persistencia relacional desplegado de forma compartida en el servidor para habilitar las transacciones ACID con las bases de datos externas.
+
+MICROSERVICIOS:
+
+
+![alt text](Business-ServiceDEPLOY.png)
+![alt text](Community-ServiceDEPLOY.png)
+![alt text](Identity-ServiceDEPLOY.png)
+![alt text](Mysql-connector-DEPLOY.png)
+
+
+FRONTEND:
+
+![alt text](Login.png)
+![alt text](HomePageFront.png)
+![alt text](Favoritos.png)
+![alt text](DeployEvidenceDBFront.png)
 
 ###### 5.3.2.7	Team Collaboration Insights during Sprint
 
@@ -2196,7 +2231,12 @@ En GitHub, se observó una distribución equitativa de commits, destacando la si
 
 ###### 5.3.2.8	Kanban Board
 
+Para este punto implementamos un tablero Kanban utilizando Trello. Esta herramientapermitió al equipo organizar las tareas del Sprint Backlog, visualizar el progreso y facilitar la colaboración. Trello se adaptó a nuestras necesidades específicas, mejorando la eficiencia y la comunicación dentro del equipo.
 
+
+Adjunto link del Trello:
+
+- https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b53ed07c7e7F9CD517/kanban-board
 
 ### Conclusiones
 ### Conclusiones y recomendaciones
