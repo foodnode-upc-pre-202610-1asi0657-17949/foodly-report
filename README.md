@@ -2275,14 +2275,58 @@ El tercer Sprint de Foodly se definió como la etapa de "Integration & Resilienc
 | **T3.6** | Implementación del **Integration System** como capa anticorrupción (ACL) unificada para gestionar todas las comunicaciones con APIs externas (Cloudinary y Mapbox). | Backend | **TS03 / QA-01** | Julca Minaya, Sergio Gino | 5 |
 | **T3.7** | Documentación técnica completa: diagramas de interacción entre servicios, guía de integración de H3, contrato de APIs y runbook de despliegue de microservicios. | Documentación | **TS01 / TS02 / TS03 / TS04 / TS05** | Cacho Seminario, Diego Alonso | 8 |
 
-###### 5.3.3.2	Development Evidence for Sprint Review
+###### 5.3.3.2  Development Evidence for Sprint Review
 
+El propósito de esta sección es presentar el registro detallado de las actividades de desarrollo completadas durante el presente sprint como sustento técnico para la revisión con los stakeholders (*Sprint Review*). La evidencia recopilada demuestra el avance del equipo en la implementación de características críticas para la plataforma **Foodly**, abarcando la migración y persistencia de datos geolocalizados de los locales gastronómicos utilizando MongoDB Atlas, el procesamiento de imágenes mediante Cloudinary y la visualización espacial interactiva mediante el radar con Mapbox y H3. Asimismo, se evidencia el fortalecimiento de la calidad de software a través del despliegue de la suite de pruebas unitarias automatizadas basadas en JUnit 5 y Mockito sobre la capa de lógica de negocio en los microservicios del ecosistema.
+
+| Repositorio | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **foodly-identity-service** | main | `950054b` | Add unit tests | Implementación de pruebas unitarias con JUnit 5 y Mockito para la verificación de flujos de registro, autenticación y perfiles de usuario. | Jun 21, 2026 |
+| **foodly-identity-service** | main | `44eaf7c` | Chore: Added business service | Configuración y desacoplamiento estructural de la capa de servicios dentro del módulo de gestión de identidad. | Jun 21, 2026 |
+| **foodly-identity-service** | main | `dc72128` | Merge add mongodb atlas | Fusión de la rama de base de datos para la centralización y persistencia de datos distribuidos en la nube. | Jun 21, 2026 |
+| **foodly-identity-service** | main | `96619af` | . | Ajustes menores de sintaxis y ordenamiento de archivos en los paquetes de configuración del microservicio. | Jun 21, 2026 |
+| **foodly-identity-service** | main | `2a5c72d` | Migrar business-service a MongoDB Atlas con soporte de lat/lng | Configuración del driver de MongoDB e infraestructura para soportar coordenadas geográficas de los huariques asociados. | Jun 21, 2026 |
+| **foodly-business-service** | main | `634697a` | Fix: mi menu update and add cloudinary | Corrección en el flujo de actualización de menús e integración con la API de Cloudinary para la gestión optimizada de imágenes de platillos. | Jun 21, 2026 |
+| **foodly-business-service** | main | `6decc1d` | Fix: Local owner interfaces were added with profiles implemented using the backend and MongoDB | Corrección e implementación de interfaces de control para los administradores de locales y sincronización de perfiles en la base de datos. | Jun 21, 2026 |
+| **foodly-business-service** | main | `36b13a7` | Merge: integrar radar con Mapbox | Integración de ramas de geolocalización para consolidar el radar de búsqueda de huariques en el entorno de desarrollo. | Jun 21, 2026 |
+| **foodly-business-service** | main | `0831ab6` | Agregar radar con Mapbox, H3 y geolocalizacion en tiempo real | Implementación del sistema de indexación hexagonal H3 y renderizado espacial en tiempo real para optimizar la logística de los pequeños negocios. | Jun 21, 2026 |
 
 ###### 5.3.3.3	Testing Suite Evidence for Sprint Review
 
+Con el objetivo de garantizar la robustez, el correcto funcionamiento de las reglas de negocio y la alta disponibilidad de la arquitectura distribuida de **Foodly**, se ha desplegado una estrategia exhaustiva de pruebas unitarias automatizadas sobre los componentes críticos de la plataforma. El desarrollo de estas pruebas se fundamenta en el uso de **JUnit 5** como motor de ejecución y **Mockito** para el aislamiento completo de las dependencias externas (como brokers de mensajería ActiveMQ y motores de persistencia MongoDB o PostgreSQL/JPA), asegurando un entorno de ejecución local determinista, ágil y de alta fidelidad con respecto a las especificaciones técnicas del software.
+
+A continuación, se presentan las evidencias de la suite de pruebas unitarias implementadas en los tres microservicios core del sistema: 
+
+Business:
+![test1](assets/images/sprint3/test1.png)
+
+Community:
+![test1](assets/images/sprint3/test2.png)
+
+Identity:
+![test1](assets/images/sprint3/test3.png)
+
 ###### 5.3.3.4	Execution Evidence for Sprint Review
 
-###### 5.3.3.5	Microservices Documentation Evidence for 
+Evidencia Frontend: 
+![test1](assets/images/sprint3/frontmapbox.png)
+
+Evidencia Implementacion de Cloudinary: 
+![test1](assets/images/sprint3/cloudinary0.png)
+![test1](assets/images/sprint3/cloudinary10.png)
+![test1](assets/images/sprint3/cloudinary1.png)
+![test1](assets/images/sprint3/cloudinary2.png)
+
+Evidencia Implementacion de H3 con mapbox:
+![test1](assets/images/sprint3/cuentamapbox.png)
+
+Creacion de MongoDB Atlas:
+
+![test1](assets/images/sprint3/mongo.png)
+![test1](assets/images/sprint3/mongo1.png)
+
+###### 5.3.3.5	Microservices Documentation Evidence for Sprint Review
+
 
 ###### 5.3.3.6	Software Deployment Evidence for Sprint Review
 
@@ -2306,13 +2350,19 @@ FRONTEND :
 <img src="assets/images/chapter-5/Radar2-SDEFSR.jpeg" alt="Radar component deploy evidence 2" style="width: 60%; height: auto; border-radius: 8px;" />
 
 
-###### 5.3.3.7	Team Collaboration Insights during Sprint
+###### 5.3.3.7  Team Collaboration Insights during Sprint
 
+La ejecución de este sprint ha consolidado la madurez operativa del equipo de ingeniería a través de una dinámica de colaboración altamente distribuida y alineada con los principios ágiles de Scrum. La interacción diaria no solo se enfocó en la división equitativa de las tareas, sino en una co-creación técnica continua para resolver los desafíos de arquitectura e integración de la plataforma **Foodly**. La sinergia colectiva fue el factor determinante para superar la complejidad técnica que representa coordinar múltiples microservicios independientes, garantizando la consistencia del sistema en todo momento.
+Frontend:
+![test1](assets/images/sprint3/colab.png)
+Backend:
+![test1](assets/images/sprint3/colab2.png)
 
 ###### 5.3.3.8	Kanban Board
 
 Para este punto implementamos un tablero Kanban utilizando Trello. Esta herramientapermitió al equipo organizar las tareas del Sprint Backlog, visualizar el progreso y facilitar la colaboración. Trello se adaptó a nuestras necesidades específicas, mejorando la eficiencia y la comunicación dentro del equipo.
 
+![test1](assets/images/sprint3/trello.png)
 
 Adjunto link del Trello:
 
