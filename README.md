@@ -2400,72 +2400,96 @@ Link del Frontend Deployado en Vercel: https://foodly-frontend-steel.vercel.app/
 Backend:
 
 Creación de virtual machine:
-1. 
-![test1](assets/images/sprint3/back1.png)
-2. 
-![test1](assets/images/sprint3/back2.png)
-3. 
-![test1](assets/images/sprint3/back3.png)
-4. Permite que se le de una ip a nuestra vm con adaptador puente
-![test1](assets/images/sprint3/back4.png)
-5. Agregamos el iso
-![test1](assets/images/sprint3/back5.png)
+1. .<br>
+
+![test1](assets/images/sprint3/back1.png)<br>
+
+2. .<br>
+![test1](assets/images/sprint3/back2.png)<br>
+
+3. .<br>
+![test1](assets/images/sprint3/back3.png)<br>
+
+4. Permite que se le de una ip a nuestra vm con adaptador puente<br>
+![test1](assets/images/sprint3/back4.png)<br>
+
+5. Agregamos el iso<br>
+![test1](assets/images/sprint3/back5.png)<br>
 
 Creación de configuración para reemplazar el vdi creado por deafult:
 
-1. Ingreso con root
-![test1](assets/images/sprint3/back6.png)
-2. Configuracion a teclado us
-![test1](assets/images/sprint3/back7.png)
-3. idioma/hostname/dhcp/password/proxy
-![test1](assets/images/sprint3/back8.png)
-4. Elegimos primer sevidor
-![test1](assets/images/sprint3/back9.png)
-5. Negamos ssh y creación de user
-![test1](assets/images/sprint3/back10.png)
+1. Ingreso con root<br>
+![test1](assets/images/sprint3/back6.png)<br>
+
+2. Configuracion a teclado us<br>
+![test1](assets/images/sprint3/back7.png)<br>
+
+3. idioma/hostname/dhcp/password/proxy<br>
+![test1](assets/images/sprint3/back8.png)<br>
+
+4. Elegimos primer sevidor<br>
+![test1](assets/images/sprint3/back9.png)<br>
+
+5. Negamos ssh y creación de user<br>
+![test1](assets/images/sprint3/back10.png)<br>
+
 6. Borramos el vdi anteiror y lo cambiamos 
-por otra vdi con la configruación realizada. instala y apagamos
-![test1](assets/images/sprint3/back11.png)
-7. 
-![test1](assets/images/sprint3/back12.png)
+por otra vdi con la configruación realizada. instala y apagamos<br>
+![test1](assets/images/sprint3/back11.png)<br>
+
+7. .<br>
+![test1](assets/images/sprint3/back12.png)<br>
 
 
 Docker:
 
-1. Cambio de idiona a es
-![test1](assets/images/sprint3/back13.png)
-2.  flechas apra abajo y en donde dice communite borras el # con el teclado "x"
-![test1](assets/images/sprint3/back14.png)
+1. Cambio de idiona a es <br>
+![test1](assets/images/sprint3/back13.png)<br>
+
+2.  flechas apra abajo y en donde dice communite borras el # con el teclado "x"<br>
+![test1](assets/images/sprint3/back14.png)<br>
+
 3. felchas para abajo + esc + : y escribes wq + enter + clear
-escribes apk add docker y cuando descargue escribes "reboot"
-![test1](assets/images/sprint3/back15.png)
-4. Iniciamos el servicio y verificamos en services.msc si está el open ssh, lo bajamos
-![test1](assets/images/sprint3/back16.png)
-5. 
-![test1](assets/images/sprint3/back17.png)
-6. En permitroot login ponerle yes
-![test1](assets/images/sprint3/back18.png)
-7. reiniciar
-![test1](assets/images/sprint3/back19.png)
+escribes apk add docker y cuando descargue escribes "reboot"<br>
+![test1](assets/images/sprint3/back15.png)<br>
+
+4. Iniciamos el servicio y verificamos en services.msc si está el open ssh, lo bajamos<br>
+![test1](assets/images/sprint3/back16.png)<br>
+
+5. <br>
+![test1](assets/images/sprint3/back17.png)<br>
+
+6. En permitroot login ponerle yes<br>
+![test1](assets/images/sprint3/back18.png)<br>
+
+7. reiniciar<br>
+![test1](assets/images/sprint3/back19.png)<br>
 
 Putty hacia la vm con docker:
 
-1. Nat y creas una regla
-![test1](assets/images/sprint3/back20.png)
-2.  Aceptar
-![test1](assets/images/sprint3/back21.png)
-3. putty.exe
-![test1](assets/images/sprint3/back22.png)
-4. Reiniciamos el servicio de internet porque estaba en adaptador puete lo cambiamos a nat
-![test1](assets/images/sprint3/back23.png)
-5. Ingresamos desde el putty 127.0.0.1 puerto 22 root y Passw0rd
-![test1](assets/images/sprint3/back24.png)
-6. Verificvamos la version de docker y desacrgamos alpine y redis
-![test1](assets/images/sprint3/back25.png)
-7. alpine, nginx, redis sin espacio
-![test1](assets/images/sprint3/back26.png)
-8. ya tenemos redis
-![test1](assets/images/sprint3/back27.png)
+1. Nat y creas una regla<br>
+![test1](assets/images/sprint3/back20.png)<br>
+
+2.  Aceptar<br>
+![test1](assets/images/sprint3/back21.png)<br>
+
+3. putty.exe<br>
+![test1](assets/images/sprint3/back22.png)<br>
+
+4. Reiniciamos el servicio de internet porque estaba en adaptador puete lo cambiamos a nat<br>
+![test1](assets/images/sprint3/back23.png)<br>
+
+5. Ingresamos desde el putty 127.0.0.1 puerto 22 root y Passw0rd<br>
+![test1](assets/images/sprint3/back24.png)<br>
+
+6. Verificvamos la version de docker y desacrgamos alpine y redis<br>
+![test1](assets/images/sprint3/back25.png)<br>
+
+7. alpine, nginx, redis sin espacio<br>
+![test1](assets/images/sprint3/back26.png)<br>
+
+8. ya tenemos redis<br>
+![test1](assets/images/sprint3/back27.png)<br>
 
 ###### 5.3.3.7  Team Collaboration Insights during Sprint
 
