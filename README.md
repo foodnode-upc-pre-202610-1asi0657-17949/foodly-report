@@ -2363,11 +2363,6 @@ Evidencia Implementacion de Cloudinary:
 ![test1](assets/images/sprint3/cloudinary1.png)
 ![test1](assets/images/sprint3/cloudinary2.png)
 
-Creacion de Radar Service:
-![test1](assets/images/sprint3/radarservice.png)
-![test1](assets/images/sprint3/redis2.png)
-![test1](assets/images/sprint3/redis3.png)
-
 Evidencia Implementacion de H3 con mapbox:
 ![test1](assets/images/sprint3/cuentamapbox.png)
 
@@ -2497,6 +2492,20 @@ Putty hacia la vm con docker:
 
 8. ya tenemos redis<br>
 ![test1](assets/images/sprint3/back27.png)<br>
+
+
+Radar Service:
+1. 
+![test1](assets/images/sprint3/radarservice.png)
+
+2. Abres cmd y corres: standalone.bat -c standalone-full.xml
+![test1](assets/images/sprint3/redis2.png)
+
+3. Recuperamos un access token
+![test1](assets/images/sprint3/redis3.png)
+
+4. Servicio alzado exitosamente
+![test1](assets/images/sprint3/redis4.png)
 
 ###### 5.3.3.7  Team Collaboration Insights during Sprint
 
