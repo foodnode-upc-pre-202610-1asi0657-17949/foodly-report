@@ -2286,6 +2286,26 @@ El tercer Sprint de Foodly se definió como la etapa de "Integration & Resilienc
 
 ###### 5.3.3.6	Software Deployment Evidence for Sprint Review
 
+MICROSERVICIOS :
+
+
+FRONTEND :
+
+<img src="assets/images/chapter-5/Menu-SDEFSR.jpeg" alt="Menu dashboard deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/Reseñas-SDEFSR.jpeg" alt="Reviews section debloy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/MiMenú-SDEFSR.jpeg" alt="Personal Menu Dashboard deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/GestiónHuarique-SDEFSR.jpeg" alt="Restaurant management deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/Dashboard-SDEFSR.jpeg" alt="Restaurant Dashboard deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/Radar-SDEFSR.jpeg" alt="Radar component deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/Radar2-SDEFSR.jpeg" alt="Radar component deploy evidence 2" style="width: 60%; height: auto; border-radius: 8px;" />
+
+
 ###### 5.3.3.7	Team Collaboration Insights during Sprint
 
 
