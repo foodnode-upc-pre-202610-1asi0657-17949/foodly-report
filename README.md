@@ -2363,6 +2363,11 @@ Evidencia Implementacion de Cloudinary:
 ![test1](assets/images/sprint3/cloudinary1.png)
 ![test1](assets/images/sprint3/cloudinary2.png)
 
+Creacion de Radar Service:
+![test1](assets/images/sprint3/radarservice.png)
+![test1](assets/images/sprint3/redis2.png)
+![test1](assets/images/sprint3/redis3.png)
+
 Evidencia Implementacion de H3 con mapbox:
 ![test1](assets/images/sprint3/cuentamapbox.png)
 
@@ -2370,6 +2375,8 @@ Creacion de MongoDB Atlas:
 
 ![test1](assets/images/sprint3/mongo.png)
 ![test1](assets/images/sprint3/mongo1.png)
+
+
 
 ###### 5.3.3.5	Microservices Documentation Evidence for Sprint Review
 
@@ -2511,14 +2518,35 @@ Adjunto link del Trello:
 
 ### Conclusiones
 ### Conclusiones y recomendaciones
-* **AV1:**
-Foodly atiende una necesidad concreta en el entorno gastronómico y urbano, ofreciendo una solución que permite a los comensales descubrir comida auténtica y a buen precio mientras optimizan su tiempo de búsqueda en un entorno real. A la vez, brinda a los dueños de restaurantes tradicionales acceso a una clientela joven, cercana y activa, que puede consumir sus menús diarios sin los altos costos de publicidad de las aplicaciones convencionales o agencias de marketing. La propuesta de valor de Foodly va más allá de conectar usuarios con restaurantes, ya que incorpora funcionalidades clave como filtros precisos de distancia, visibilidad mediante fotos reales, exclusión de cadenas comerciales y un sistema sencillo para publicar el menú del día. Esto no solo aumenta la visibilidad de los pequeños negocios, sino que también democratiza la experiencia gastronómica digital desde etapas tempranas, promoviendo relaciones de consumo local más justas, eficientes y centradas en la comunidad.
 
-* **AV2:**
-El diseño arquitectónico de Foodly se ha desarrollado con un enfoque claro en la alta disponibilidad, el rendimiento y la modificabilidad, utilizando patrones y tácticas que garantizan una plataforma robusta y escalable. La adopción de una arquitectura de microservicios desacoplada, junto con la implementación de un sistema de caché en memoria para optimizar las consultas geoespaciales, asegura que los usuarios puedan acceder a la información de manera rápida y confiable incluso durante picos de tráfico. Además, el uso de una persistencia políglota permite que cada microservicio maneje su propia base de datos, facilitando futuras modificaciones sin afectar la estabilidad del sistema. En conjunto, estas decisiones arquitectónicas posicionan a Foodly como una solución tecnológica sólida para abordar los desafíos específicos del sector gastronómico local.
+**AV1:** Durante la AV1, el equipo logró entender los requisitos de los usuarios, pudo plasmar 
+sus dolencias y necesidades. Además se conoció el negocio y la problemática en sí.
 
-* **AV3:**
-Durante la entrega de este Avance 3, el equipo logró materializar de manera exitosa las decisiones arquitectónicas planteadas previamente, logrando una transición efectiva hacia la construcción de los microservicios correspondientes al Sprint 2. La implementación de la persistencia políglota, combinando MySQL para la gestión estructurada de identidad y comunidad, junto con MongoDB Atlas para la flexibilidad de los perfiles comerciales y menús dinámicos, demostró ser una decisión acertada para soportar las distintas naturalezas de los datos. Asimismo, la correcta integración de los flujos entre el Frontend en Vue.js y las APIs del Backend, sumado a la adopción de GitFlow y el despliegue de los componentes en la nube, permitieron un desarrollo organizado y trazable.
+**AV2:** Durante la AV2, el equipo logró integrar conocimientos avanzados de arquitectura de 
+software con metodologías de diseño modernas. La actualización constante sobre el sistema de 
+indexación H3 de Uber y la investigación de mercado permitió fundamentar una solución robusta, 
+escalable y técnicamente viable para el sector de los restaurantes.
+
+**TB1:** Durante la TB1, el equipo consolidó la implementación técnica del sistema, integrando 
+herramientas de desarrollo, pruebas y despliegue. Se logró transformar los drivers arquitectónicos 
+en una solución de software funcional, asegurando la calidad mediante estándares de codificación 
+y documentación de nivel profesional.
+
+**AV3:** Para el AV3 el equipo entendió que mantener una documentación técnica rigurosa y 
+actualizada es tan crucial como la codificación misma. Comprendimos que documentar correctamente 
+los microservicios y las evidencias de ejecución asegura que cualquier desarrollador pueda 
+comprender la arquitectura, facilitando el mantenimiento y la escalabilidad del software.
+
+**AV4:** El AV4 representó la etapa de mayor integración técnica del proyecto, donde el equipo 
+materializó de forma funcional los drivers arquitectónicos definidos en iteraciones previas. 
+La implementación del Geo-Radar Engine con H3 y Redis, la integración de servicios externos 
+como Cloudinary y Mapbox a través del Integration System (ACL), el despliegue contenerizado 
+con Docker y el desarrollo de interfaces de usuario para ambos segmentos objetivo demostraron 
+que la arquitectura de microservicios diseñada es viable y escalable. Asimismo, la incorporación 
+de una suite de pruebas unitarias automatizadas con JUnit 5 y Mockito evidenció la madurez del 
+equipo en prácticas de calidad de software. En conjunto, este entregable consolidó a Foodly 
+como una plataforma técnicamente sólida, preparada para su validación integral y despliegue 
+final en la nube.
 
 ### Video About-The-Team
 
