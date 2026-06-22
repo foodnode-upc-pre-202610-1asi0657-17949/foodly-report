@@ -158,6 +158,36 @@
                 <td style="padding: 8px;">Villanueva Andrade, Ysaac Ligorio</td>
                 <td style="padding: 8px;">Preparación de evidencias de despliegue de software, análisis de insights de colaboración del equipo y actualización del tablero Kanban.</td>
             </tr>
+            <tr style="background-color: #fafafa;">
+                <td style="padding: 8px; text-align: center;">4.0</td>
+                <td style="padding: 8px; text-align: center;">14/06/26</td>
+                <td style="padding: 8px;">Julca Minaya, Sergio Gino</td>
+                <td style="padding: 8px;">Implementación del Microservicio Geo-Radar Engine con integración de la librería H3 de Uber para indexación hexagonal y configuración de Docker con Redis para caché de proximidad en memoria.</td>
+            </tr>
+            <tr style="background-color: #fafafa;">
+                <td style="padding: 8px; text-align: center;">4.1</td>
+                <td style="padding: 8px; text-align: center;">15/06/26</td>
+                <td style="padding: 8px;">Urrutia Peña, Jasmin Adriana</td>
+                <td style="padding: 8px;">Coordinación del Sprint 3 e implementación de la suite de pruebas unitarias automatizadas con JUnit 5 y Mockito para los microservicios Business, Community e Identity.</td>
+            </tr>
+            <tr style="background-color: #fafafa;">
+                <td style="padding: 8px; text-align: center;">4.2</td>
+                <td style="padding: 8px; text-align: center;">16/06/26</td>
+                <td style="padding: 8px;">Vega Coronado, Fabricio Samir</td>
+                <td style="padding: 8px;">Desarrollo de las vistas Frontend en Vue.js para el segmento Dueños (Dashboard, Mi Menú, Gestión de Perfil y Reseñas), integración de Cloudinary para carga asíncrona de imágenes y contribución al Backend del Business Service.</td>
+            </tr>
+            <tr style="background-color: #fafafa;">
+                <td style="padding: 8px; text-align: center;">4.3</td>
+                <td style="padding: 8px; text-align: center;">17/06/26</td>
+                <td style="padding: 8px;">Villanueva Andrade, Ysaac Ligorio</td>
+                <td style="padding: 8px;">Implementación de las vistas Frontend en Vue.js para el segmento Comensal Explorador (mapa interactivo y radar de proximidad), integración de Mapbox con H3 y desarrollo del microservicio Business con soporte de coordenadas geográficas en MongoDB Atlas.</td>
+            </tr>
+            <tr style="background-color: #fafafa;">
+                <td style="padding: 8px; text-align: center;">4.4</td>
+                <td style="padding: 8px; text-align: center;">19/06/26</td>
+                <td style="padding: 8px;">Cacho Seminario, Diego Alonso</td>
+                <td style="padding: 8px;">Documentación del apartado Software Deployment Evidence for Sprint Review del Sprint 3, registro de trazas de despliegue de microservicios y bases de datos en producción, y elaboración del avance de diapositivas del proyecto.</td>
+            </tr>
         </tbody>
     </table>
 </section>
@@ -255,10 +285,12 @@
 
 ### Student Outcome
 
+### Student Outcome
+
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Cacho Seminario, Diego Alonso**<br>**AV1:** Enfoque en el diseño de artefactos de UX (Empathy Maps, Scenario Mapping) para alinear la visión del usuario con el producto funcional.<br>**AV2:** Investigación y definición de los **Fundamentos de Arquitectura**, seleccionando **Principles Statements** y **Architectural Styles** (Microservicios y Hexagonal) que garantizan la resiliencia del sistema.<br>**TB1:** Configuración del entorno de desarrollo detallando herramientas, frameworks y bases de datos políglotas, estableciendo la estrategia de GitFlow y las guías de estilo para asegurar la coherencia técnica en el despliegue.<br>**AV3:** Implemente el avance y actualización del informe técnico del proyecto, centrándome específicamente en el desarrollo del apartado Software Deployment Evidence for Sprint Review. <br><br>**Julca Minaya, Sergio Gino**<br>**AV1:** Aplicación de metodologías ágiles y Lean UX para la validación temprana de la propuesta de valor de FoodNode.<br>**AV2:** Implementación del **Atribute Driven Design (ADD 3.0)**, gestionando el ciclo de vida del diseño mediante iteraciones y el control de decisiones en un **Architectural Design Backlog**.<br>**TB1:** Desarrollo y actualización de la suite de pruebas del núcleo de la aplicación (Backend) y refactorización del framework orientada a patrones de diseño y microservicios.<br><br>**Urrutia Peña, Jasmin Adriana**<br>**AV1:** Análisis competitivo de plataformas FoodTech para identificar brechas tecnológicas en el mercado local y proponer una solución diferenciada.<br>**AV2:** Definición de **Design Patterns** (GoF) y **Tactics** de arquitectura, estableciendo los mecanismos técnicos para satisfacer atributos críticos como la Performance y Disponibilidad.<br>**TB1:** Elaboración de la documentación técnica detallada de los microservicios implementados y recopilación de evidencias de ejecución para el cierre del ciclo de desarrollo.<br><br>**Vega Coronado, Fabricio Samir**<br>**AV1:** Modelado de negocio y segmentación de objetivos estratégicos para startups tecnológicas del sector gastronómico.<br>**AV2:** Identificación y formalización de los **Architectural Drivers**, priorizando los **Quality Attribute Scenarios** y **Constraints** técnicos que restringen y guían el diseño de Foodly.<br>**TB1:** Gestión del Sprint Backlog y preparación de las suites de pruebas funcionales necesarias para la validación de los criterios de aceptación del producto.<br><br>**Villanueva Andrade, Ysaac Ligorio**<br>**AV1:** Diseño centrado en el usuario mediante Impact Mapping y matrices de tareas operativas para definir el alcance funcional.<br>**AV2:** Desarrollo de **Vistas y Perspectivas Técnicas** utilizando el modelo **C4 (Contexto, Contenedores)** y diagramas UML para comunicar la estructura del sistema de forma estandarizada.<br>**TB1:** Generación de evidencias de despliegue y contenerización de software, junto con la gestión del tablero Kanban para el control del flujo de trabajo del equipo. | **AV1:** Durante la AV1, el equipo logró entender los requisitos de los usuarios, pudo plasmar sus dolencias y necesidades. Además se conoció el negocio y la problemática en si. <br><br> **AV2:** Durante la AV2, el equipo logró integrar conocimientos avanzados de arquitectura de software con metodologías de diseño modernas. La actualización constante sobre el sistema de indexación **H3 de Uber** y la investigación de mercado permitió fundamentar una solución robusta, escalable y técnicamente viable para el sector de los restaurantes.<br><br>**TB1:** Durante la TB1, el equipo consolidó la implementación técnica del sistema, integrando herramientas de desarrollo, pruebas y despliegue. Se logró transformar los drivers arquitectónicos en una solución de software funcional, asegurando la calidad mediante estándares de codificación y documentación de nivel profesional.<br><br>**AV3:** Para el AV3 el equipo entendio que mantener una documentación técnica rigurosa y actualizada es tan crucial como la codificación misma. Comprendimos que documentar correctamente los microservicios y las evidencias de ejecución asegura que cualquier desarrollador pueda comprender la arquitectura, facilitando el mantenimiento y la escalabilidad del software. |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Cacho Seminario, Diego Alonso**<br>**AV1:** Dominio de plataformas de colaboración técnica (GitHub) y diseño (UXPressia) para optimizar el flujo de trabajo distribuido.<br>**AV2:** Aprendizaje autónomo sobre **Tácticas de Arquitectura** para resolver conflictos entre disponibilidad y performance en sistemas distribuidos de alta demanda.<br>**TB1:** Investigación y aplicación de modelos de gestión de configuración de software y convenciones de código limpio para optimizar el mantenimiento del sistema.<br>**AV3:** Comprendí la necesidad de investigar de forma autónoma cómo extraer y documentar adecuadamente las trazas de despliegue de microservicios y bases de datos. Esto me permitió realizar el punto Software Deployment Evidence for Sprint Review, reconociendo que registrar el entorno de producción exige un aprendizaje continuo más allá del desarrollo de código.<br><br>**Julca Minaya, Sergio Gino**<br>**AV1:** Uso de herramientas de modelado de negocio para la iteración constante del Lean UX Canvas y la validación de hipótesis.<br>**AV2:** Adopción de la metodología **ADD (SEI)**, reconociendo que el diseño de software es un proceso recursivo que requiere el aprendizaje de nuevos estándares y marcos de trabajo de la industria.<br>**TB1:** Especialización en la aplicación de patrones de diseño avanzados y técnicas de refactorización para garantizar la escalabilidad del backend.<br><br>**Urrutia Peña, Jasmin Adriana**<br>**AV1:** Sistematización de investigación cualitativa mediante herramientas de documentación compartida para entender la evolución de las necesidades del usuario.<br>**AV2:** Estudio de **Patrones de Diseño** arquitectónicos para garantizar que la estructura de Foodly sea extensible, modular y fácil de mantener a largo plazo.<br>**TB1:** Perfeccionamiento en la documentación de microservicios y trazabilidad de requerimientos, reconociendo la importancia de la claridad técnica en proyectos complejos.<br><br>**Vega Coronado, Fabricio Samir**<br>**AV1:** Actualización en estándares de la industria FoodTech y modelos de negocio digitales para asegurar la competitividad de la startup.<br>**AV2:** Profundización en el análisis de **Atributos de Calidad**, comprendiendo que la seguridad y escalabilidad requieren un estudio técnico constante frente a nuevas amenazas y tecnologías emergentes.<br>**TB1:** Aprendizaje continuo en la gestión de ciclos de vida de desarrollo ágil y validación técnica de software para satisfacer las expectativas del cliente.<br><br>**Villanueva Andrade, Ysaac Ligorio**<br>**AV1:** Aprendizaje de nuevas metodologías de análisis de requerimientos (Impact Mapping) para conectar objetivos de negocio con entregables técnicos.<br>**AV2:** Dominio de herramientas de **Modelado Arquitectónico (C4 Model)**, reconociendo que la representación visual de sistemas complejos es una habilidad crítica que demanda actualización técnica permanente.<br>**TB1:** Adopción de nuevas herramientas de despliegue y análisis de métricas de colaboración grupal para optimizar el rendimiento del equipo de desarrollo. | **AV1:** El equipo reconoce que el desarrollo de Foodly no solo requiere código, sino el aprendizaje permanente de marcos de trabajo arquitectónicos y herramientas de comunicación técnica.<br><br> **AV2:** El avance en la AV2 evidencia una curva de aprendizaje exitosa sobre conceptos complejos de arquitectura. La organización por roles permitió que cada integrante se especializara en un área técnica, fomentando un entorno de aprendizaje colaborativo.<br><br>**TB1:** El equipo demuestra un compromiso con el aprendizaje permanente al dominar nuevas herramientas de gestión de configuración, pruebas y despliegue. Esta actualización constante ha permitido alinear los objetivos del proyecto con las mejores prácticas actuales de la ingeniería de software profesional.<br><br>**AV3:** El equipo reconoce que el dominio de herramientas de gestión de la configuración, control de versiones y documentación colaborativa requiere un aprendizaje continuo. Estas habilidades no orientadas directamente al código son fundamentales para integrarse de manera exitosa y profesional en equipos de desarrollo ágil. |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Cacho Seminario, Diego Alonso**<br>**AV1:** Enfoque en el diseño de artefactos de UX (Empathy Maps, Scenario Mapping) para alinear la visión del usuario con el producto funcional.<br>**AV2:** Investigación y definición de los **Fundamentos de Arquitectura**, seleccionando **Principles Statements** y **Architectural Styles** (Microservicios y Hexagonal) que garantizan la resiliencia del sistema.<br>**TB1:** Configuración del entorno de desarrollo detallando herramientas, frameworks y bases de datos políglotas, estableciendo la estrategia de GitFlow y las guías de estilo para asegurar la coherencia técnica en el despliegue.<br>**AV3:** Documenté el apartado *Software Deployment Evidence for Sprint Review* del Sprint 3, registrando las trazas de despliegue de los microservicios y las bases de datos en producción. Asimismo, elaboré el avance de diapositivas del proyecto, actualizando los conceptos de arquitectura distribuida y contenerización necesarios para comunicar el estado técnico del sistema ante los stakeholders.<br><br>**Julca Minaya, Sergio Gino**<br>**AV1:** Aplicación de metodologías ágiles y Lean UX para la validación temprana de la propuesta de valor de FoodNode.<br>**AV2:** Implementación del **Atribute Driven Design (ADD 3.0)**, gestionando el ciclo de vida del diseño mediante iteraciones y el control de decisiones en un **Architectural Design Backlog**.<br>**TB1:** Desarrollo y actualización de la suite de pruebas del núcleo de la aplicación (Backend) y refactorización del framework orientada a patrones de diseño y microservicios.<br>**AV3:** Implementé el **Microservicio Geo-Radar Engine** integrando la librería H3 de Uber para la indexación hexagonal de restaurantes, profundizando en el procesamiento de datos geoespaciales en tiempo real. Paralelamente, configuré la **Implementación de Docker con Redis**, actualizando mis conocimientos en contenerización y almacenamiento en memoria RAM para garantizar las búsquedas sub-segundo requeridas por el atributo de calidad de Performance.<br><br>**Urrutia Peña, Jasmin Adriana**<br>**AV1:** Análisis competitivo de plataformas FoodTech para identificar brechas tecnológicas en el mercado local y proponer una solución diferenciada.<br>**AV2:** Definición de **Design Patterns** (GoF) y **Tactics** de arquitectura, estableciendo los mecanismos técnicos para satisfacer atributos críticos como la Performance y Disponibilidad.<br>**TB1:** Elaboración de la documentación técnica detallada de los microservicios implementados y recopilación de evidencias de ejecución para el cierre del ciclo de desarrollo.<br>**AV3:** Coordiné las actividades del **Sprint 3**, actualizando mis conocimientos en gestión de ciclos de entrega ágil bajo una arquitectura de microservicios. Implementé las **pruebas unitarias automatizadas con JUnit 5 y Mockito** para los microservicios Business, Community e Identity, profundizando en técnicas de aislamiento de dependencias y validación de lógica de dominio para garantizar la calidad del software antes del despliegue.<br><br>**Vega Coronado, Fabricio Samir**<br>**AV1:** Modelado de negocio y segmentación de objetivos estratégicos para startups tecnológicas del sector gastronómico.<br>**AV2:** Identificación y formalización de los **Architectural Drivers**, priorizando los **Quality Attribute Scenarios** y **Constraints** técnicos que restringen y guían el diseño de Foodly.<br>**TB1:** Gestión del Sprint Backlog y preparación de las suites de pruebas funcionales necesarias para la validación de los criterios de aceptación del producto.<br>**AV3:** Desarrollé las **vistas del Frontend en Vue.js para el segmento Dueños de restaurantes** (Dashboard, Gestión de Perfil, Mi Menú y Reseñas), actualizando mis conocimientos en desarrollo de interfaces reactivas. Implementé la integración con **Cloudinary** para la carga asíncrona de imágenes de platos y contribuí al **Backend del Business Service**, profundizando en la conexión entre la capa de presentación y los microservicios de gestión comercial.<br><br>**Villanueva Andrade, Ysaac Ligorio**<br>**AV1:** Diseño centrado en el usuario mediante Impact Mapping y matrices de tareas operativas para definir el alcance funcional.<br>**AV2:** Desarrollo de **Vistas y Perspectivas Técnicas** utilizando el modelo **C4 (Contexto, Contenedores)** y diagramas UML para comunicar la estructura del sistema de forma estandarizada.<br>**TB1:** Generación de evidencias de despliegue y contenerización de software, junto con la gestión del tablero Kanban para el control del flujo de trabajo del equipo.<br>**AV3:** Implementé las **vistas del Frontend en Vue.js para el segmento Comensal Explorador** (mapa interactivo y radar de proximidad) y contribuí al **microservicio Business**. Actualicé mis conocimientos en integración de **Mapbox** para el renderizado cartográfico y en el uso de la librería **H3 de Uber** para la visualización hexagonal geoespacial en tiempo real, conectando el cliente web con la capa de búsqueda del backend. | **AV1:** Durante la AV1, el equipo logró entender los requisitos de los usuarios, pudo plasmar sus dolencias y necesidades. Además se conoció el negocio y la problemática en sí.<br><br>**AV2:** Durante la AV2, el equipo logró integrar conocimientos avanzados de arquitectura de software con metodologías de diseño modernas. La actualización constante sobre el sistema de indexación **H3 de Uber** y la investigación de mercado permitió fundamentar una solución robusta, escalable y técnicamente viable para el sector de los restaurantes.<br><br>**TB1:** Durante la TB1, el equipo consolidó la implementación técnica del sistema, integrando herramientas de desarrollo, pruebas y despliegue. Se logró transformar los drivers arquitectónicos en una solución de software funcional, asegurando la calidad mediante estándares de codificación y documentación de nivel profesional.<br><br>**AV3:** Durante el AV3, el equipo demostró una actualización técnica integral al materializar los drivers arquitectónicos en componentes de software productivos. La implementación del Geo-Radar con H3 y Redis, la integración de Cloudinary y Mapbox a través del Integration System (ACL), y el desarrollo de las interfaces de usuario para ambos segmentos, evidenciaron que mantener conceptos actualizados de contenerización, geolocalización y pruebas automatizadas es indispensable para construir software de calidad profesional en una arquitectura distribuida de microservicios. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Cacho Seminario, Diego Alonso**<br>**AV1:** Dominio de plataformas de colaboración técnica (GitHub) y diseño (UXPressia) para optimizar el flujo de trabajo distribuido.<br>**AV2:** Aprendizaje autónomo sobre **Tácticas de Arquitectura** para resolver conflictos entre disponibilidad y performance en sistemas distribuidos de alta demanda.<br>**TB1:** Investigación y aplicación de modelos de gestión de configuración de software y convenciones de código limpio para optimizar el mantenimiento del sistema.<br>**AV3:** Reconocí la necesidad de investigar de forma autónoma cómo extraer y documentar adecuadamente las trazas de despliegue de microservicios y bases de datos en entornos productivos. La preparación del *Software Deployment Evidence* y el avance de diapositivas me exigió aprender a comunicar decisiones técnicas complejas de forma clara, reconociendo que documentar el entorno de producción y presentar el sistema ante distintas audiencias requiere un aprendizaje continuo más allá del desarrollo de código.<br><br>**Julca Minaya, Sergio Gino**<br>**AV1:** Uso de herramientas de modelado de negocio para la iteración constante del Lean UX Canvas y la validación de hipótesis.<br>**AV2:** Adopción de la metodología **ADD (SEI)**, reconociendo que el diseño de software es un proceso recursivo que requiere el aprendizaje de nuevos estándares y marcos de trabajo de la industria.<br>**TB1:** Especialización en la aplicación de patrones de diseño avanzados y técnicas de refactorización para garantizar la escalabilidad del backend.<br>**AV3:** Reconocí que la implementación de sistemas geoespaciales en tiempo real demanda un aprendizaje continuo sobre herramientas especializadas. La configuración de Docker con Redis para el Geo-Radar me llevó a estudiar de forma autónoma los principios de contenerización y gestión de caché distribuida, entendiendo que las tecnologías de indexación espacial como H3 son un campo en constante evolución que exige actualización permanente para poder aplicarlas correctamente en proyectos de software de alta disponibilidad.<br><br>**Urrutia Peña, Jasmin Adriana**<br>**AV1:** Sistematización de investigación cualitativa mediante herramientas de documentación compartida para entender la evolución de las necesidades del usuario.<br>**AV2:** Estudio de **Patrones de Diseño** arquitectónicos para garantizar que la estructura de Foodly sea extensible, modular y fácil de mantener a largo plazo.<br>**TB1:** Perfeccionamiento en la documentación de microservicios y trazabilidad de requerimientos, reconociendo la importancia de la claridad técnica en proyectos complejos.<br>**AV3:** Reconocí la importancia del aprendizaje continuo en metodologías de calidad de software al implementar las pruebas unitarias del Sprint 3. El uso de JUnit 5 y Mockito para los microservicios Business, Community e Identity me permitió comprender que las estrategias de testing en arquitecturas distribuidas evolucionan constantemente y que dominar el aislamiento de dependencias mediante mocks es una habilidad fundamental que requiere práctica y actualización permanente para mantener la integridad de sistemas de software complejos.<br><br>**Vega Coronado, Fabricio Samir**<br>**AV1:** Actualización en estándares de la industria FoodTech y modelos de negocio digitales para asegurar la competitividad de la startup.<br>**AV2:** Profundización en el análisis de **Atributos de Calidad**, comprendiendo que la seguridad y escalabilidad requieren un estudio técnico constante frente a nuevas amenazas y tecnologías emergentes.<br>**TB1:** Aprendizaje continuo en la gestión de ciclos de vida de desarrollo ágil y validación técnica de software para satisfacer las expectativas del cliente.<br>**AV3:** Reconocí la necesidad de aprendizaje permanente al integrar servicios externos como Cloudinary dentro de la arquitectura de microservicios de Foodly. El desarrollo de las pantallas del Dashboard para dueños en Vue.js y la conexión con el Business Service me llevó a investigar de forma autónoma patrones de integración de APIs de terceros y técnicas de diseño de interfaces reactivas, comprendiendo que el ecosistema de herramientas para el desarrollo frontend y la gestión de medios en la nube evoluciona continuamente y exige actualización constante.<br><br>**Villanueva Andrade, Ysaac Ligorio**<br>**AV1:** Aprendizaje de nuevas metodologías de análisis de requerimientos (Impact Mapping) para conectar objetivos de negocio con entregables técnicos.<br>**AV2:** Dominio de herramientas de **Modelado Arquitectónico (C4 Model)**, reconociendo que la representación visual de sistemas complejos es una habilidad crítica que demanda actualización técnica permanente.<br>**TB1:** Adopción de nuevas herramientas de despliegue y análisis de métricas de colaboración grupal para optimizar el rendimiento del equipo de desarrollo.<br>**AV3:** Reconocí la necesidad de aprendizaje continuo al enfrentarme a la integración de Mapbox con la librería H3 de Uber para construir el radar de proximidad interactivo en el Frontend. La implementación del microservicio Business con soporte de coordenadas geográficas en MongoDB me exigió investigar de forma autónoma sobre persistencia de datos geoespaciales y renderizado cartográfico en aplicaciones web, reconociendo que la convergencia entre el desarrollo frontend, los servicios de mapas y la indexación espacial es un campo técnico que demanda actualización permanente para mantenerse competitivo como profesional de software. | **AV1:** El equipo reconoce que el desarrollo de Foodly no solo requiere código, sino el aprendizaje permanente de marcos de trabajo arquitectónicos y herramientas de comunicación técnica.<br><br>**AV2:** El avance en la AV2 evidencia una curva de aprendizaje exitosa sobre conceptos complejos de arquitectura. La organización por roles permitió que cada integrante se especializara en un área técnica, fomentando un entorno de aprendizaje colaborativo.<br><br>**TB1:** El equipo demuestra un compromiso con el aprendizaje permanente al dominar nuevas herramientas de gestión de configuración, pruebas y despliegue. Esta actualización constante ha permitido alinear los objetivos del proyecto con las mejores prácticas actuales de la ingeniería de software profesional.<br><br>**AV3:** El equipo consolidó en este entregable que el aprendizaje permanente no es opcional en proyectos de arquitectura distribuida: es una condición indispensable. La integración exitosa de tecnologías como H3, Mapbox, Cloudinary, Docker, Redis y frameworks de pruebas automatizadas en un único ecosistema funcional demostró que cada integrante debió investigar, adaptarse y actualizar sus conocimientos de manera autónoma. Este proceso refuerza la convicción colectiva de que el dominio de herramientas emergentes y la disposición al aprendizaje continuo son las competencias más valiosas para el desempeño profesional sostenido en la ingeniería de software. |
 
 ### Capítulo I: Introducción
 
@@ -2308,8 +2340,22 @@ Identity:
 
 ###### 5.3.3.4	Execution Evidence for Sprint Review
 
-Evidencia Frontend: 
+Evidencia Frontend Mapa: 
 ![test1](assets/images/sprint3/frontmapbox.png)
+Evidencia Frontend seccion Dueños:
+<img src="assets/images/chapter-5/Menu-SDEFSR.jpeg" alt="Menu dashboard deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/Reseñas-SDEFSR.jpeg" alt="Reviews section debloy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/MiMenú-SDEFSR.jpeg" alt="Personal Menu Dashboard deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/GestiónHuarique-SDEFSR.jpeg" alt="Restaurant management deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/Dashboard-SDEFSR.jpeg" alt="Restaurant Dashboard deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/Radar-SDEFSR.jpeg" alt="Radar component deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/Radar2-SDEFSR.jpeg" alt="Radar component deploy evidence 2" style="width: 60%; height: auto; border-radius: 8px;" />
 
 Evidencia Implementacion de Cloudinary: 
 ![test1](assets/images/sprint3/cloudinary0.png)
@@ -2328,27 +2374,98 @@ Creacion de MongoDB Atlas:
 ###### 5.3.3.5	Microservices Documentation Evidence for Sprint Review
 
 
+Bussines service:
+![test1](assets/images/sprint3/endpoints1.png)
+![test1](assets/images/sprint3/endpoints2.png)
+
+Community service:
+![test1](assets/images/sprint3/endpoints3.jpeg)
+![test1](assets/images/sprint3/endpoints4.jpeg)
+
+Identity service:
+![test1](assets/images/sprint3/endpoints5.jpeg)
+![test1](assets/images/sprint3/endpoints6.jpeg)
+
+
 ###### 5.3.3.6	Software Deployment Evidence for Sprint Review
 
-MICROSERVICIOS :
+
+Frontend:
+![test1](assets/images/sprint3/paso1.jpeg)
+![test1](assets/images/sprint3/paso2.jpeg)
+![test1](assets/images/sprint3/paso3.jpeg)
+![test1](assets/images/sprint3/paso4.jpeg)
+Link del Frontend Deployado en Vercel: https://foodly-frontend-steel.vercel.app/
+
+Backend:
+
+Creación de virtual machine:
+1. 
+![test1](assets/images/sprint3/back1.png)
+2. 
+![test1](assets/images/sprint3/back2.png)
+3. 
+![test1](assets/images/sprint3/back3.png)
+4. Permite que se le de una ip a nuestra vm con adaptador puente
+![test1](assets/images/sprint3/back4.png)
+5. Agregamos el iso
+![test1](assets/images/sprint3/back5.png)
+
+Creación de configuración para reemplazar el vdi creado por deafult:
+
+1. Ingreso con root
+![test1](assets/images/sprint3/back6.png)
+2. Configuracion a teclado us
+![test1](assets/images/sprint3/back7.png)
+3. idioma/hostname/dhcp/password/proxy
+![test1](assets/images/sprint3/back8.png)
+4. Elegimos primer sevidor
+![test1](assets/images/sprint3/back9.png)
+5. Negamos ssh y creación de user
+![test1](assets/images/sprint3/back10.png)
+6. Borramos el vdi anteiror y lo cambiamos 
+por otra vdi con la configruación realizada. instala y apagamos
+![test1](assets/images/sprint3/back11.png)
+7. 
+![test1](assets/images/sprint3/back12.png)
 
 
-FRONTEND :
+Docker:
 
-<img src="assets/images/chapter-5/Menu-SDEFSR.jpeg" alt="Menu dashboard deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
+1. Cambio de idiona a es
+![test1](assets/images/sprint3/back13.png)
+2.  flechas apra abajo y en donde dice communite borras el # con el teclado "x"
+![test1](assets/images/sprint3/back14.png)
+3. felchas para abajo + esc + : y escribes wq + enter + clear
+escribes apk add docker y cuando descargue escribes "reboot"
+![test1](assets/images/sprint3/back15.png)
+4. Iniciamos el servicio y verificamos en services.msc si está el open ssh, lo bajamos
+![test1](assets/images/sprint3/back16.png)
+5. 
+![test1](assets/images/sprint3/back17.png)
+6. En permitroot login ponerle yes
+![test1](assets/images/sprint3/back18.png)
+7. reiniciar
+![test1](assets/images/sprint3/back19.png)
 
-<img src="assets/images/chapter-5/Reseñas-SDEFSR.jpeg" alt="Reviews section debloy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
+Putty hacia la vm con docker:
 
-<img src="assets/images/chapter-5/MiMenú-SDEFSR.jpeg" alt="Personal Menu Dashboard deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
-
-<img src="assets/images/chapter-5/GestiónHuarique-SDEFSR.jpeg" alt="Restaurant management deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
-
-<img src="assets/images/chapter-5/Dashboard-SDEFSR.jpeg" alt="Restaurant Dashboard deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
-
-<img src="assets/images/chapter-5/Radar-SDEFSR.jpeg" alt="Radar component deploy evidence" style="width: 60%; height: auto; border-radius: 8px;" />
-
-<img src="assets/images/chapter-5/Radar2-SDEFSR.jpeg" alt="Radar component deploy evidence 2" style="width: 60%; height: auto; border-radius: 8px;" />
-
+1. Nat y creas una regla
+![test1](assets/images/sprint3/back20.png)
+2.  Aceptar
+![test1](assets/images/sprint3/back21.png)
+3. putty.exe
+![test1](assets/images/sprint3/back22.png)
+4. Reiniciamos el servicio de internet porque estaba en adaptador puete lo cambiamos a nat
+![test1](assets/images/sprint3/back23.png)
+5. Ingresamos desde el putty 127.0.0.1 puerto 22 root y Passw0rd
+![test1](assets/images/sprint3/back24.png)
+6. Verificvamos la version de docker y desacrgamos alpine y redis
+![test1](assets/images/sprint3/back25.png)
+7. alpine, nginx, redis sin espacio
+![test1](assets/images/sprint3/back26.png)
+8. ya tenemos redis
+![test1](assets/images/sprint3/back27.png)
 
 ###### 5.3.3.7  Team Collaboration Insights during Sprint
 
