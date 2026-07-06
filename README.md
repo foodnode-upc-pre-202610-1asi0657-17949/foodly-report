@@ -31,7 +31,7 @@
 
 
 <div style="text-align: center;">
-    <h4 style="text-align: center">Lima – Junio 2026</h4>
+    <h4 style="text-align: center">Lima – Julio 2026</h4>
 </div>
 
 
@@ -275,6 +275,8 @@
   - [5.2 Software Configuration Management](#52-software-configuration-management)
   - [5.3 Microservices Implementation](#53-microservices-implementation)
   - [5.4 Microservices Deployment](#54-microservices-deployment)
+    - [5.4.1 Cloud Architecture Diagram](#541-cloud-architecture-diagram)
+    - [5.4.2 Cloud Architecture Deployment (AWS, Microsoft Azure or Google Cloud)](#542-cloud-architecture-deployment-(aws,-microsoft-azure-or-google-cloud))
 
 - [Conclusiones](#conclusiones)
 - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
@@ -2525,6 +2527,148 @@ Adjunto link del Trello:
 
 - https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b53ed07c7e7F9CD517/kanban-board
 
+##### 5.3.4 Sprint 4
+
+El cuarto Sprint de Foodly se definió como.........
+
+###### 5.3.4.1 Sprint Backlog 4
+
+| ID Tarea | Tarea de Diseño / Desarrollo | Tipo | Relación con Backlog | Responsable | Estimación (SP) |
+| :--- | :--- | :--- | :--- | :--- | :---: |
+| **T#.#** | ........... | Backend | **US##** | Julca Minaya, Sergio Gino | # |
+| **T#.#** | ........... | Backend | **US##** | Julca Minaya, Sergio Gino | # |
+| **T#.#** | ........... | Backend | **US##** | Julca Minaya, Sergio Gino | # |
+| **T#.#** | ........... | Backend | **US##** | Julca Minaya, Sergio Gino | # |
+| **T#.#** | ........... | Backend | **US##** | Julca Minaya, Sergio Gino | # |
+| **T#.#** | ........... | Backend | **US##** | Julca Minaya, Sergio Gino | # |
+
+###### 5.3.4.2  Development Evidence for Sprint Review
+
+El propósito de esta sección es presentar.........
+
+| Repositorio | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **############** | main | `######` | ####### | #######. | Jul ##, 2026 |
+| **############** | main | `######` | ####### | #######. | Jul ##, 2026 |
+| **############** | main | `######` | ####### | #######. | Jul ##, 2026 |
+| **############** | main | `######` | ####### | #######. | Jul ##, 2026 |
+| **############** | main | `######` | ####### | #######. | Jul ##, 2026 |
+| **############** | main | `######` | ####### | #######. | Jul ##, 2026 |
+| **############** | main | `######` | ####### | #######. | Jul ##, 2026 |
+
+###### 5.3.4.3	Testing Suite Evidence for Sprint Review
+
+Con el objetivo de..........
+
+A continuación, se presentan las evidencias de la suite de pruebas unitarias implementadas en los tres microservicios core del sistema: 
+
+Business:
+![test1](assets/images/sprint4/########.png)
+
+Community:
+![test1](assets/images/sprint4/########.png)
+
+Identity:
+![test1](assets/images/sprint4/########.png)
+
+###### 5.3.4.4	Execution Evidence for Sprint Review
+
+Evidencia Frontend Mapa:
+![test1](assets/images/sprint4/########.png)
+
+Evidencia Frontend seccion Dueños:
+<img src="assets/images/chapter-5/########.jpeg" alt="##########" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/########.jpeg" alt="##########" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/########.jpeg" alt="##########" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/########.jpeg" alt="##########" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/########.jpeg" alt="##########" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/########.jpeg" alt="##########" style="width: 60%; height: auto; border-radius: 8px;" />
+
+<img src="assets/images/chapter-5/########.jpeg" alt="##########" style="width: 60%; height: auto; border-radius: 8px;" />
+
+Evidencia Implementacion de Cloudinary: 
+
+![test1](assets/images/sprint4/########.png)
+![test1](assets/images/sprint4/########.png)
+![test1](assets/images/sprint4/########.png)
+![test1](assets/images/sprint4/########.png)
+
+Evidencia Implementacion de H3 con mapbox:
+![test1](assets/images/sprint4/########.png)
+
+Creacion de MongoDB Atlas:
+![test1](assets/images/sprint4/########.png)
+![test1](assets/images/sprint4/########.png)
+
+
+
+###### 5.3.4.5	Microservices Documentation Evidence for Sprint Review
+
+Bussines service:
+![test1](assets/images/sprint4/########.png)
+![test1](assets/images/sprint4/########.png)
+
+Community service:
+![test1](assets/images/sprint4/########.jpeg)
+![test1](assets/images/sprint4/########.jpeg)
+
+Identity service:
+![test1](assets/images/sprint4/########.jpeg)
+![test1](assets/images/sprint4/########.jpeg)
+
+
+###### 5.3.4.6	Software Deployment Evidence for Sprint Review
+
+Frontend:
+![test1](assets/images/sprint4/########.jpeg)
+![test1](assets/images/sprint4/########.jpeg)
+![test1](assets/images/sprint4/########.jpeg)
+![test1](assets/images/sprint4/########.jpeg)
+
+Link del Frontend Deployado en Vercel: https://foodly-frontend-steel.vercel.app/
+
+Backend:
+
+
+Docker:
+
+
+Radar Service:
+
+
+###### 5.3.4.7  Team Collaboration Insights during Sprint
+
+La ejecución de este sprint ha consolidado.......
+
+Frontend:
+![test1](assets/images/sprint4/########.png)
+
+Backend:
+![test1](assets/images/sprint4/########.png)
+
+###### 5.3.4.8	Kanban Board
+
+Para este punto implementamos un tablero Kanban utilizando Trello. Esta herramientapermitió al equipo organizar las tareas del Sprint Backlog, visualizar el progreso y facilitar la colaboración. Trello se adaptó a nuestras necesidades específicas, mejorando la eficiencia y la comunicación dentro del equipo.
+
+![test1](assets/images/sprint4/########.png)
+
+Adjunto link del Trello:
+
+- LINK
+
+## 5.4 Microservices Deployment
+
+##### 5.4.1 Cloud Architecture Diagram
+
+
+##### 5.4.2 Cloud Architecture Deployment (AWS, Microsoft Azure or Google Cloud)
+
+
 ### Conclusiones
 ### Conclusiones y recomendaciones
 
@@ -2556,6 +2700,8 @@ de una suite de pruebas unitarias automatizadas con JUnit 5 y Mockito evidenció
 equipo en prácticas de calidad de software. En conjunto, este entregable consolidó a Foodly 
 como una plataforma técnicamente sólida, preparada para su validación integral y despliegue 
 final en la nube.
+
+**TB2:** Durante la TB2, .......
 
 ### Video About-The-Team
 
