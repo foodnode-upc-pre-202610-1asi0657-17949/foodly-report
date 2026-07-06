@@ -2535,12 +2535,12 @@ El cuarto Sprint de Foodly se definió como.........
 
 | ID Tarea | Tarea de Diseño / Desarrollo | Tipo | Relación con Backlog | Responsable | Estimación (SP) |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| **T#.#** | ........... | Backend | **US##** | Julca Minaya, Sergio Gino | # |
-| **T#.#** | ........... | Backend | **US##** | Julca Minaya, Sergio Gino | # |
-| **T#.#** | ........... | Backend | **US##** | Julca Minaya, Sergio Gino | # |
-| **T#.#** | ........... | Backend | **US##** | Julca Minaya, Sergio Gino | # |
-| **T#.#** | ........... | Backend | **US##** | Julca Minaya, Sergio Gino | # |
-| **T#.#** | ........... | Backend | **US##** | Julca Minaya, Sergio Gino | # |
+| **T#.#** | ........... | Backend | **US##** | ############, ########### | # |
+| **T#.#** | ........... | Backend | **US##** | ############, ########### | # |
+| **T#.#** | ........... | Backend | **US##** | ############, ########### | # |
+| **T#.#** | ........... | Backend | **US##** | ############, ########### | # |
+| **T#.#** | ........... | Backend | **US##** | ############, ########### | # |
+| **T#.#** | ........... | Backend | **US##** | ############, ########### | # |
 
 ###### 5.3.4.2  Development Evidence for Sprint Review
 
