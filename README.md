@@ -1,85 +1,66 @@
+<div style="page-break-inside: avoid; page-break-after: always;">
+
 <div style="text-align: center;">
-  <img src="assets/images/cover/logo_upc.png" alt="Logo UPC" width="80"/>
+  <img src="assets/images/cover/logo_upc.png" alt="Logo UPC" width="60"/>
 </div>
 
 <div style="text-align: center;">
-    <h2 style="text-align: center;">Universidad Peruana de Ciencias Aplicadas</h2>
-    <h3 style="text-align: center;">Ingeniería de Software</h3>
-    <h4 style="text-align: center;">1ASI0572 &nbsp; Fundamentos de Arquitectura de Software</h4>
-    <h4 style="text-align: center;">202610</h4>
+    <h3 style="text-align: center; margin: 4px 0;">Universidad Peruana de Ciencias Aplicadas</h3>
+    <h4 style="text-align: center; margin: 4px 0;">Ingeniería de Software</h4>
+    <p style="text-align: center; margin: 2px 0; font-size: 13px;">1ASI0572 &nbsp; Fundamentos de Arquitectura de Software</p>
+    <p style="text-align: center; margin: 2px 0; font-size: 13px;">202610</p>
+    <p style="text-align: center; margin: 2px 0; font-size: 13px;">NRC: 17949</p>
+    <p style="text-align: center; margin: 2px 0; font-size: 13px;">Profesor: &nbsp; Jorge Luis Delgado Vite</p>
 </div>
 
-<br>
-
-<div style="text-align: center;">
-    <h4 style="text-align: center;">NRC: 17949</h4>
+<div style="text-align: center; margin-top: 10px;">
+    <h4 style="text-align: center; margin: 4px 0;">TRABAJO FINAL</h4>
+    <p style="text-align: center; margin: 2px 0; font-size: 13px;">Startup: FoodNode</p>
+    <p style="text-align: center; margin: 2px 0; font-size: 13px;">Nombre del Producto: Foodly</p>
 </div>
 
-<br>
+<div style="text-align: center; margin-top: 10px;">
 
-<div style="text-align: center;">
-    <h4 style="text-align: center;">Profesor: &nbsp; Jorge Luis Delgado Vite</h4>
-</div>
+<p style="font-size: 13px; margin: 4px 0;"><strong>Integrantes:</strong></p>
 
-<br>
-
-<div style="text-align: center;">
-    <h3 style="text-align: center;">TRABAJO FINAL</h3>
-</div>
-
-<div style="text-align: center;">
-    <h4 style="text-align: center;">Startup: FoodNode</h4>
-    <h4 style="text-align: center;">Nombre del Producto: Foodly</h4>
-</div>
-
-<br>
-
-<div style="text-align: center;">
-    <h4 style="text-align: center;">Startup: FoodNode</h4>
-    <h4 style="text-align: center;">Nombre del Producto: Foodly</h4>
-</div>
-
-<br>
-
-**Integrantes:**
-
-<table border="1" align="center" style="border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px;">
+<table border="1" align="center" style="border-collapse: collapse; font-family: Arial, sans-serif; font-size: 12px;">
     <thead>
         <tr style="background-color: #f2f2f2; text-align: center;">
-            <th style="padding: 8px;">Alumno</th>
-            <th style="padding: 8px;">Código</th>
+            <th style="padding: 4px 8px;">Alumno</th>
+            <th style="padding: 4px 8px;">Código</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td style="padding: 8px; text-align: center;">Cacho Seminario, Diego Alonso</td>
-            <td style="padding: 8px; text-align: center;">U202223990</td>
+            <td style="padding: 4px 8px; text-align: center; color: #000;">Cacho Seminario, Diego Alonso</td>
+            <td style="padding: 4px 8px; text-align: center; color: #000;">U202223990</td>
         </tr>
         <tr>
-            <td style="padding: 8px; text-align: center;">Julca Minaya, Sergio Gino</td>
-            <td style="padding: 8px; text-align: center;">U202318274</td>
+            <td style="padding: 4px 8px; text-align: center; color: #000;">Julca Minaya, Sergio Gino</td>
+            <td style="padding: 4px 8px; text-align: center; color: #000;">U202318274</td>
         </tr>
         <tr>
-            <td style="padding: 8px; text-align: center;">Urrutia Peña, Jasmin Adriana</td>
-            <td style="padding: 8px; text-align: center;">U202310008</td>
+            <td style="padding: 4px 8px; text-align: center; color: #000;">Urrutia Peña, Jasmin Adriana</td>
+            <td style="padding: 4px 8px; text-align: center; color: #000;">U202310008</td>
         </tr>
         <tr>
-            <td style="padding: 8px; text-align: center;">Vega Coronado, Fabricio Samir</td>
-            <td style="padding: 8px; text-align: center;">U202317000</td>
+            <td style="padding: 4px 8px; text-align: center; color: #000;">Vega Coronado, Fabricio Samir</td>
+            <td style="padding: 4px 8px; text-align: center; color: #000;">U202317000</td>
         </tr>
         <tr>
-            <td style="padding: 8px; text-align: center;">Villanueva Andrade, Ysaac Ligorio</td>
-            <td style="padding: 8px; text-align: center;">U20231c168</td>
+            <td style="padding: 4px 8px; text-align: center; color: #000;">Villanueva Andrade, Ysaac Ligorio</td>
+            <td style="padding: 4px 8px; text-align: center; color: #000;">U20231c168</td>
         </tr>
     </tbody>
 </table>
 
-<br>
-
-<div style="text-align: center;">
-    <h4 style="text-align: center">Lima – Julio 2026</h4>
 </div>
 
+<div style="text-align: center; margin-top: 10px;">
+    <p style="font-size: 13px; margin: 2px 0;">Lima – Julio 2026</p>
+</div>
+
+</div>
 
 <hr class="page-break">
 
@@ -2753,6 +2734,10 @@ Cada VM se aprovisionó de forma independiente, asignándosele una IP dentro de 
 
 ![test1](assets/images/sprint4/maquinascorriendo.png)
 ![test1](assets/images/sprint4/maquinascorriendo1.png)
+
+-Frontend: Seccion Radar
+
+![test1](assets/images/sprint4/radar.png)
 
 ###### 5.3.4.7  Team Collaboration Insights during Sprint
 
