@@ -4,31 +4,77 @@
 
 <div style="text-align: center;">
     <h2 style="text-align: center;">Universidad Peruana de Ciencias Aplicadas</h2>
-    <h4 style="text-align: center;">Ingeniería de Software</h2> 
-    <h4 style="text-align: center"> Periodo: 202610 </h4>
-    <h4 style="text-align: center"> 1ASI0572 - Fundamentos de Arquitectura de Software </h4>
-    <h4 style="text-align: center"> NRC: 17949  </h4>
-    <h4 style="text-align: center"> Docente: Jorge Luis Delgado Vite </h4>
+    <h3 style="text-align: center;">Ingeniería de Software</h3>
+    <h4 style="text-align: center;">1ASI0572 &nbsp; Fundamentos de Arquitectura de Software</h4>
+    <h4 style="text-align: center;">202610</h4>
 </div>
 
 <br>
 
 <div style="text-align: center;">
-    <h3 style="text-align: center">Informe del Trabajo Final </h3>
-    <h4 style="text-align: center;"> Startup: FoodNode </h3>
-    <h4 style="text-align: center"> Producto: Foodly </h4>
+    <h4 style="text-align: center;">NRC: 17949</h4>
 </div>
 
 <br>
 
-<div style="text-align:center; margin-top: 10px; font-size: 90%; line-height: 1.6;">
-    <p>U202223990 — Cacho Seminario, Diego Alonso</p>
-    <p>U202318274 — Julca Minaya, Sergio Gino </p>
-    <p>U202310008 — Urrutia Pena, Jasmin Adriana</p>
-    <p>U202317000 — Vega Coronado Fabricio Samir</p>
-    <p>U20231c168 — Villanueva Andrade Ysaac Ligorio</p>
+<div style="text-align: center;">
+    <h4 style="text-align: center;">Profesor: &nbsp; Jorge Luis Delgado Vite</h4>
 </div>
 
+<br>
+
+<div style="text-align: center;">
+    <h3 style="text-align: center;">TRABAJO FINAL</h3>
+</div>
+
+<div style="text-align: center;">
+    <h4 style="text-align: center;">Startup: FoodNode</h4>
+    <h4 style="text-align: center;">Nombre del Producto: Foodly</h4>
+</div>
+
+<br>
+
+<div style="text-align: center;">
+    <h4 style="text-align: center;">Startup: FoodNode</h4>
+    <h4 style="text-align: center;">Nombre del Producto: Foodly</h4>
+</div>
+
+<br>
+
+**Integrantes:**
+
+<table border="1" align="center" style="border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px;">
+    <thead>
+        <tr style="background-color: #f2f2f2; text-align: center;">
+            <th style="padding: 8px;">Alumno</th>
+            <th style="padding: 8px;">Código</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 8px; text-align: center;">Cacho Seminario, Diego Alonso</td>
+            <td style="padding: 8px; text-align: center;">U202223990</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; text-align: center;">Julca Minaya, Sergio Gino</td>
+            <td style="padding: 8px; text-align: center;">U202318274</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; text-align: center;">Urrutia Peña, Jasmin Adriana</td>
+            <td style="padding: 8px; text-align: center;">U202310008</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; text-align: center;">Vega Coronado, Fabricio Samir</td>
+            <td style="padding: 8px; text-align: center;">U202317000</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; text-align: center;">Villanueva Andrade, Ysaac Ligorio</td>
+            <td style="padding: 8px; text-align: center;">U20231c168</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
 
 <div style="text-align: center;">
     <h4 style="text-align: center">Lima – Julio 2026</h4>
@@ -39,7 +85,6 @@
 
 ### Registro de Versiones del Informe
 <section>
-    <h3>Registro de Versiones del Informe</h3>
     <table border="1" style="width:100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px;">
         <thead>
             <tr style="background-color: #f2f2f2; text-align: center;">
@@ -287,11 +332,12 @@
 
 ### Student Outcome
 
+### Student Outcome
+
 | Criterio específico | Acciones realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Cacho Seminario, Diego Alonso**<br>**AV1:** Enfoque en el diseño de artefactos de UX (Empathy Maps, Scenario Mapping) para alinear la visión del usuario con el producto funcional.<br>**AV2:** Investigación y definición de los *Fundamentos de Arquitectura*, seleccionando *Principles Statements* y *Architectural Styles* (Microservicios y Hexagonal) que garantizan la resiliencia del sistema.<br>**TB1:** Configuración del entorno de desarrollo detallando herramientas, frameworks y bases de datos políglotas, estableciendo la estrategia de GitFlow y las guías de estilo para asegurar la coherencia técnica en el despliegue.<br>**AV3:** Documentación del apartado *Software Deployment Evidence for Sprint Review* del Sprint 3, registrando las trazas de despliegue de los microservicios y las bases de datos en producción. Asimismo, elaboración de las diapositivas de avance del proyecto, actualizando los conceptos de arquitectura distribuida y contenerización ante los stakeholders.<br>**TF:** Consolidación final del informe técnico del proyecto. Me encargué de la revisión integral, corrección de observaciones de los Sprints anteriores y la maquetación del esqueleto documental para las nuevas entregas. Además, actualicé mis conocimientos técnicos de CI/CD liderando el despliegue del Frontend Web Application hacia un entorno de producción a través de la plataforma Vercel.<br><br>**Julca Minaya, Sergio Gino**<br>**AV1:** Aplicación de metodologías ágiles y Lean UX para la validación temprana de la propuesta de valor de FoodNode.<br>**AV2:** Implementación del *Attribute Driven Design (ADD 3.0)*, gestionando el ciclo de vida del diseño mediante iteraciones y el control de decisiones en un *Architectural Design Backlog*.<br>**TB1:** Desarrollo y actualización de la suite de pruebas del núcleo de la aplicación (Backend) y refactorización del framework orientada a patrones de diseño y microservicios.<br>**AV3:** Implementación del *Microservicio Geo-Radar Engine* integrando la librería H3 de Uber para la indexación hexagonal de restaurantes, profundizando en el procesamiento de datos geoespacial en tiempo real. Paralelamente, configuración de Docker con Redis, actualizando los conocimientos en contenerización y almacenamiento en caché en memoria RAM.<br>**TF:** Finalización del Geo-Radar Engine y despliegue del Message Broker (ActiveMQ) en el entorno de producción. Implementación final de la capa de anticorrupción (ACL) del Integration System para unificar de forma asíncrona y robusta las llamadas a servicios externos.<br><br>**Urrutia Peña, Jasmin Adriana**<br>**AV1:** Análisis competitivo de plataformas FoodTech para identificar brechas tecnológicas en el mercado local y proponer una solución diferenciada.<br>**AV2:** Definición de *Design Patterns* (GoF) y *Tactics* de arquitectura, estableciendo los mecanismos técnicos para satisfacer atributos críticos como la Performance y Disponibilidad.<br>**TB1:** Elaboración de la documentación técnica detallada de los microservicios implementados y recopilación de evidencias de ejecución para el cierre del ciclo de desarrollo.<br>**AV3:** Coordinación de las actividades del Sprint 3, actualizando conocimientos en gestión de ciclos de entrega ágil. Implementación de la suite de pruebas unitarias automatizadas con JUnit 5 y Mockito para los microservicios Business, Community e Identity, profundizando en técnicas de aislamiento de dependencias.<br>**TF:** Integración completa de la API de Cloudinary en la infraestructura asíncrona de Foodly, logrando que el procesamiento y optimización de imágenes multimedia del menú diario se realice sin bloquear el hilo principal de la aplicación web.<br><br>**Vega Coronado, Fabricio Samir**<br>**AV1:** Modelado de negocio y segmentación de objetivos estratégicos para startups tecnológicas del sector gastronómico.<br>**AV2:** Identificación y formalización de los *Architectural Drivers*, priorizando los *Quality Attribute Scenarios* y *Constraints* técnicos que restringen y guían el diseño de Foodly.<br>**TB1:** Gestión del Sprint Backlog y preparación de las suites de pruebas funcionales necesarias para la validación de los criterios de aceptación del producto.<br>**AV3:** Desarrollo de las vistas del Frontend en Vue.js para el segmento Dueños de restaurantes (Dashboard, Gestión de Perfil, Mi Menú y Reseñas), actualizando conocimientos en interfaces reactivas. Implementación de la carga asíncrona de imágenes de platos y contribución al backend del Business Service.<br>**TF:** Culminación técnica del Frontend reactivo orientado al segmento administrativo, integrando las métricas en tiempo real del Dashboard de visualización del negocio y el flujo dinámico del estado Abierto/Cerrado conectado al Broker de mensajería.<br><br>**Villanueva Andrade, Ysaac Ligorio**<br>**AV1:** Diseño centrado en el usuario mediante Impact Mapping y matrices de tareas operativas para definir el alcance funcional.<br>**AV2:** Desarrollo de *Vistas y Perspectivas Técnicas* utilizando el modelo C4 (Contexto, Contenedores) y diagramas UML para comunicar la estructura del sistema de forma estandarizada.<br>**TB1:** Generación de evidencias de despliegue y contenerización de software, junto con la gestión del tablero Kanban para el control del flujo de trabajo del equipo.<br>**AV3:** Implementación de las vistas del Frontend en Vue.js para el segmento Comensal Explorador (mapa interactivo y radar de proximidad) y contribución al microservicio Business. Actualización de conocimientos en integración de Mapbox para renderizado cartográfico y uso de la librería H3 para visualización geoespacial.<br>**TF:** Refinamiento técnico de los adaptadores de persistencia en MongoDB Atlas para el catálogo no relacional de menús y estructuración final del radar de Mapbox con polígonos geoespaciales indexados por Redis. | **AV1:** El equipo logró entender los requisitos de los usuarios, plasmando sus dolencias y necesidades, además de comprender el negocio y la problemática gastronómica en sí.<br><br>**AV2:** El equipo logró integrar conocimientos avanzados de arquitectura de software con metodologías de diseño modernas. La actualización constante sobre el sistema H3 de Uber y la investigación de mercado permitió fundamentar una solución robusta, escalable y técnicamente viable.<br><br>**TB1:** El equipo consolidó la implementación técnica del sistema, integrando herramientas de desarrollo, pruebas y despliegue para transformar los drivers arquitectónicos en software funcional de nivel profesional.<br><br>**AV3:** El equipo demostró una actualización técnica integral al materializar los drivers arquitectónicos en componentes de software productivos. La implementación del Geo-Radar con H3 y Redis, la integración de Cloudinary y Mapbox mediante el Integration System (ACL), y el desarrollo frontend evidenciaron que mantener actualizados los conceptos distribuidos es indispensable.<br><br>**TF:** Al cierre de la entrega final, el equipo consolidó una actualización tecnológica exhaustiva alineada a las exigencias modernas del mercado de software. Lograr que una arquitectura políglota distribuida en microservicios responda de forma asíncrona mediante un Message Broker, persista información espacial sub-segundo en memoria RAM y ejecute suites automatizadas de pruebas con un 100% de éxito, demuestra de forma fehaciente que los estudiantes han incorporado estándares de diseño e ingeniería de software empresarial críticos para su futuro desempeño profesional. |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Cacho Seminario, Diego Alonso**<br>**AV1:** Dominio de plataformas de colaboración técnica (GitHub) y diseño (UXPressia) para optimizar el flujo de trabajo distribuido.<br>**AV2:** Aprendizaje autónomo sobre *Tácticas de Arquitectura* para resolver conflictos entre disponibilidad y performance en soluciones distribuidas de alta demanda.<br>**TB1:** Investigación y aplicación de modelos de gestión de configuración de software y convenciones de código limpio para optimizar el mantenimiento del sistema.<br>**AV3:** Reconocimiento de la necesidad de investigar de forma autónoma la extracción y documentación de trazas de despliegue en entornos productivos. La preparación de diapositivas exigió aprender a comunicar decisiones técnicas complejas a distintas audiencias más allá del código.<br>**TF:** Aprendizaje y dominio autónomo de la plataforma de alojamiento en la nube Vercel, reconociendo que el dominio en el despliegue ágil de aplicaciones Frontend y la constante verificación y redacción de estándares técnicos documentales en proyectos escalables son exigencias continuas del perfil profesional moderno.<br><br>**Julca Minaya, Sergio Gino**<br>**AV1:** Uso de herramientas de modelado de negocio para la iteración constante del Lean UX Canvas y la validación de hipótesis.<br>**AV2:** Adopción de la metodología *ADD (SEI)*, reconociendo que el diseño de software es un proceso recursivo que requiere el aprendizaje de nuevos marcos de trabajo de la industria.<br>**TB1:** Especialización autónoma en la aplicación de patrones de diseño avanzados y técnicas de refactorización para garantizar la escalabilidad del backend.<br>**AV3:** Reconocimiento de que la geolocalización en tiempo real demanda aprendizaje continuo de herramientas especializadas. La configuración de Docker con Redis exigió estudiar de forma autónoma los principios de contenerización y caché distribuida, entendiendo que tecnologías como H3 están en constante evolución.<br>**TF:** Adopción autónoma de patrones empresariales basados en mensajería asíncrona JMS utilizando ActiveMQ, asumiendo que los paradigmas guiados por eventos representan una competencia indispensable en arquitecturas distribuidas modernas.<br><br>**Urrutia Peña, Jasmin Adriana**<br>**AV1:** Sistematización de investigación cualitativa mediante herramientas de documentación compartida para entender la evolución de las necesidades del usuario.<br>**AV2:** Estudio autónomo de *Patrones de Diseño* arquitectónicos para garantizar que la estructura de Foodly sea extensible, modular y fácil de mantener a largo plazo.<br>**TB1:** Perfeccionamiento en la documentación de microservicios y trazabilidad de requerimientos, reconociendo la importancia de la claridad técnica en proyectos complejos.<br>**AV3:** Reconocimiento de la importancia del aprendizaje continuo en metodologías de calidad de software. El uso de JUnit 5 y Mockito para los microservicios core permitió comprender que las estrategias de testing en arquitecturas distribuidas evolucionan constantemente y exigen actualización permanente.<br>**TF:** Investigación exhaustiva sobre el funcionamiento técnico de capas de anticorrupción (ACL) y gestión de APIs de terceros (Cloudinary), reconociendo la necesidad de aprender de manera continua marcos de resiliencia ante inestabilidades de redes externas.<br><br>**Vega Coronado, Fabricio Samir**<br>**AV1:** Actualización en estándares de la industria FoodTech y modelos de negocio digitales para asegurar la competitividad de la startup.<br>**AV2:** Profundización en el análisis de *Atributos de Calidad*, comprendiendo que la seguridad y escalabilidad requieren un estudio técnico constante frente a tecnologías emergentes.<br>**TB1:** Aprendizaje continuo en la gestión de ciclos de vida de desarrollo ágil y validación técnica de software para satisfacer las expectativas del cliente.<br>**AV3:** Reconocimiento de la necesidad de aprendizaje permanente al integrar servicios externos en microservicios. El desarrollo de pantallas del Dashboard en Vue.js y la conexión al Business Service llevó a investigar de forma autónoma patrones de APIs de terceros y reactividad, sabiendo que el ecosistema frontend evoluciona continuamente.<br>**TF:** Autoestudio en el manejo y renderizado de componentes de análisis analítico visual (gráficos estadísticos, charts y mapas de densidad de tráfico en Vue.js) para proveer un panel de control intuitivo al segmento de dueños.<br><br>**Villanueva Andrade, Ysaac Ligorio**<br>**AV1:** Aprendizaje de nuevas metodologías de análisis de requerimientos (Impact Mapping) para conectar objetivos de negocio con entregables técnicos.<br>**AV2:** Dominio autónomo de herramientas de *Modelado Arquitectónico (C4 Model)*, reconociendo que la representación visual estandarizada de sistemas complejos es una habilidad crítica que demanda actualización técnica permanente.<br>**TB1:** Adopción de herramientas de despliegue y análisis de métricas de colaboración grupal (GitHub Insights) para optimizar el rendimiento del equipo de desarrollo.<br>**AV3:** Reconocimiento de la necesidad de aprendizaje continuo al enfrentar la integración de Mapbox con H3 para construir el radar de proximidad interactivo. La implementación comercial geográfica con MongoDB exigió investigar sobre persistencia espacial, asumiendo que la indexación cartográfica es un campo competitivo dinámico.<br>**TF:** Autoaprendizaje en técnicas avanzadas de normalización de datos JSON estructurados para colecciones altamente flexibles en MongoDB Atlas, dominando las estrategias modernas de mapeo objeto-documento (ODM). | **AV1:** El equipo reconoce que el desarrollo de Foodly no solo requiere código, sino el aprendizaje permanente de marcos de trabajo arquitectónicos y herramientas de comunicación técnica.<br><br>**AV2:** El avance en el diseño evidencia una curva de aprendizaje de conceptos abstractos exitosa. La organización por roles permitió que cada integrante se especializara en un área técnica, fomentando un entorno de aprendizaje colaborativo.<br><br>**TB1:** El equipo demuestra compromiso con el aprendizaje permanente al dominar herramientas de configuración, pruebas y despliegue, alineando los objetivos del proyecto con las mejores prácticas actuales de la ingeniería de software profesional.<br><br>**AV3:** El equipo consolidó que el aprendizaje permanente no es opcional en proyectos de arquitectura distribuida: es una condición indispensable. La integración de H3, Mapbox, Cloudinary, Docker y Redis en un único ecosistema funcional demostró la capacidad de investigar, adaptarse y actualizar conocimientos de manera autónoma.<br><br>**TF:** La entrega del Trabajo Final corrobora la asimilación completa de este outcome. Los estudiantes han interiorizado que un ingeniero de software competitivo debe ser un aprendiz autodidacta permanente, capaz de enfrentarse a documentación de librerías en constante mutación (como Uber H3, Mapbox o Redis) y resolver de manera independiente fallas de integración distribuida. Este proyecto cierra demostrando que el hábito del autoaprendizaje técnico y la experimentación rigurosa constituyen los pilares fundamentales para construir soluciones de software resilientes de nivel profesional a lo largo de toda la vida laboral. |
-
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Cacho Seminario, Diego Alonso**<br>**AV1:** Enfoque en el diseño de artefactos de UX (Empathy Maps, Scenario Mapping) para alinear la visión del usuario con el producto funcional.<br>**AV2:** Investigación y definición de los *Fundamentos de Arquitectura*, seleccionando *Principles Statements* y *Architectural Styles* (Microservicios y Hexagonal) que garantizan la resiliencia del sistema.<br>**TB1:** Configuración del entorno de desarrollo detallando herramientas, frameworks y bases de datos políglotas, estableciendo la estrategia de GitFlow y las guías de estilo para asegurar la coherencia técnica en el despliegue.<br>**AV3:** Documentación del apartado *Software Deployment Evidence for Sprint Review* del Sprint 3, registrando las trazas de despliegue de los microservicios y las bases de datos en producción. Asimismo, elaboración de las diapositivas de avance del proyecto, actualizando los conceptos de arquitectura distribuida y contenerización ante los stakeholders.<br>**AV4 (TF):** Consolidación final del runbook técnico de arquitectura y los diagramas de interacción del ecosistema Foodly. Actualización integral de los conocimientos en orquestación de sistemas de software empresarial basados en Jakarta EE y servidores de aplicaciones WildFly.<br><br>**Julca Minaya, Sergio Gino**<br>**AV1:** Aplicación de metodologías ágiles y Lean UX para la validación temprana de la propuesta de valor de FoodNode.<br>**AV2:** Implementación del *Attribute Driven Design (ADD 3.0)*, gestionando el ciclo de vida del diseño mediante iteraciones y el control de decisiones en un *Architectural Design Backlog*.<br>**TB1:** Desarrollo y actualización de la suite de pruebas del núcleo de la aplicación (Backend) y refactorización del framework orientada a patrones de diseño y microservicios.<br>**AV3:** Implementación del *Microservicio Geo-Radar Engine* integrando la librería H3 de Uber para la indexación hexagonal de restaurantes, profundizando en el procesamiento de datos geoespacial en tiempo real. Paralelamente, configuración de Docker con Redis, actualizando los conocimientos en contenerización y almacenamiento en caché en memoria RAM.<br>**AV4 (TF):** Finalización del Geo-Radar Engine y despliegue del Message Broker (ActiveMQ) en el entorno de producción. Implementación final de la capa de anticorrupción (ACL) del Integration System para unificar de forma asíncrona y robusta las llamadas a servicios externos.<br><br>**Urrutia Peña, Jasmin Adriana**<br>**AV1:** Análisis competitivo de plataformas FoodTech para identificar brechas tecnológicas en el mercado local y proponer una solución diferenciada.<br>**AV2:** Definición de *Design Patterns* (GoF) y *Tactics* de arquitectura, estableciendo los mecanismos técnicos para satisfacer atributos críticos como la Performance y Disponibilidad.<br>**TB1:** Elaboración de la documentación técnica detallada de los microservicios implementados y recopilación de evidencias de ejecución para el cierre del ciclo de desarrollo.<br>**AV3:** Coordinación de las actividades del Sprint 3, actualizando conocimientos en gestión de ciclos de entrega ágil. Implementación de la suite de pruebas unitarias automatizadas con JUnit 5 y Mockito para los microservicios Business, Community e Identity, profundizando en técnicas de aislamiento de dependencias.<br>**AV4 (TF):** Integración completa de la API de Cloudinary en la infraestructura asíncrona de Foodly, logrando que el procesamiento y optimización de imágenes multimedia del menú diario se realice sin bloquear el hilo principal de la aplicación web.<br><br>**Vega Coronado, Fabricio Samir**<br>**AV1:** Modelado de negocio y segmentación de objetivos estratégicos para startups tecnológicas del sector gastronómico.<br>**AV2:** Identificación y formalización de los *Architectural Drivers*, priorizando los *Quality Attribute Scenarios* y *Constraints* técnicos que restringen y guían el diseño de Foodly.<br>**TB1:** Gestión del Sprint Backlog y preparación de las suites de pruebas funcionales necesarias para la validación de los criterios de aceptación del producto.<br>**AV3:** Desarrollo de las vistas del Frontend en Vue.js para el segmento Dueños de restaurantes (Dashboard, Gestión de Perfil, Mi Menú y Reseñas), actualizando conocimientos en interfaces reactivas. Implementación de la carga asíncrona de imágenes de platos y contribución al backend del Business Service.<br>**AV4 (TF):** Culminación técnica del Frontend reactivo orientado al segmento administrativo, integrando las métricas en tiempo real del Dashboard de visualización del negocio y el flujo dinámico del estado Abierto/Cerrado conectado al Broker de mensajería.<br><br>**Villanueva Andrade, Ysaac Ligorio**<br>**AV1:** Diseño centrado en el usuario mediante Impact Mapping y matrices de tareas operativas para definir el alcance funcional.<br>**AV2:** Desarrollo de *Vistas y Perspectivas Técnicas* utilizando el modelo C4 (Contexto, Contenedores) y diagramas UML para comunicar la estructura del sistema de forma estandarizada.<br>**TB1:** Generación de evidencias de despliegue y contenerización de software, junto con la gestión del tablero Kanban para el control del flujo de trabajo del equipo.<br>**AV3:** Implementación de las vistas del Frontend en Vue.js para el segmento Comensal Explorador (mapa interactivo y radar de proximidad) y contribución al microservicio Business. Actualización de conocimientos en integración de Mapbox para renderizado cartográfico y uso de la librería H3 para visualización geoespacial.<br>**AV4 (TF):** Refinamiento técnico de los adaptadores de persistencia en MongoDB Atlas para el catálogo no relacional de menús y estructuración final del radar de Mapbox con polígonos geoespaciales indexados por Redis. | **AV1:** El equipo logró entender los requisitos de los usuarios, plasmando sus dolencias y necesidades, además de comprender el negocio y la problemática gastronómica en sí.<br><br>**AV2:** El equipo logró integrar conocimientos avanzados de arquitectura de software con metodologías de diseño modernas. La actualización constante sobre el sistema H3 de Uber y la investigación de mercado permitió fundamentar una solución robusta, escalable y técnicamente viable.<br><br>**TB1:** El equipo consolidó la implementación técnica del sistema, integrando herramientas de desarrollo, pruebas y despliegue para transformar los drivers arquitectónicos en software funcional de nivel profesional.<br><br>**AV3:** El equipo demostró una actualización técnica integral al materializar los drivers arquitectónicos en componentes de software productivos. La implementación del Geo-Radar con H3 y Redis, la integración de Cloudinary y Mapbox mediante el Integration System (ACL), y el desarrollo frontend evidenciaron que mantener actualizados los conceptos distribuidos es indispensable.<br><br>**AV4 (Conclusión Final del Proyecto):** Al cierre de la entrega final, el equipo consolidó una actualización tecnológica exhaustiva alineada a las exigencias modernas del mercado de software. Lograr que una arquitectura políglota distribuida en microservicios responda de forma asíncrona mediante un Message Broker, persista información espacial sub-segundo en memoria RAM y ejecute suites automatizadas de pruebas con un 100% de éxito, demuestra de forma fehaciente que los estudiantes han incorporado estándares de diseño e ingeniería de software empresarial críticos para su futuro desempeño profesional. |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Cacho Seminario, Diego Alonso**<br>**AV1:** Dominio de plataformas de colaboración técnica (GitHub) y diseño (UXPressia) para optimizar el flujo de trabajo distribuido.<br>**AV2:** Aprendizaje autónomo sobre *Tácticas de Arquitectura* para resolver conflictos entre disponibilidad y performance en soluciones distribuidas de alta demanda.<br>**TB1:** Investigación y aplicación de modelos de gestión de configuración de software y convenciones de código limpio para optimizar el mantenimiento del sistema.<br>**AV3:** Reconocimiento de la necesidad de investigar de forma autónoma la extracción y documentación de trazas de despliegue en entornos productivos. La preparación de diapositivas exigió aprender a comunicar decisiones técnicas complejas a distintas audiencias más allá del código.<br>**AV4 (TF):** Aprendizaje y dominio de las herramientas de empaquetado de componentes `.war` independientes y aprovisionamiento de máquinas virtuales Linux, reconociendo que la automatización y el despliegue de infraestructura en la nube son campos dinámicos que demandan autoeducación continua.<br><br>**Julca Minaya, Sergio Gino**<br>**AV1:** Uso de herramientas de modelado de negocio para la iteración constante del Lean UX Canvas y la validación de hipótesis.<br>**AV2:** Adopción de la metodología *ADD (SEI)*, reconociendo que el diseño de software es un proceso recursivo que requiere el aprendizaje de nuevos marcos de trabajo de la industria.<br>**TB1:** Especialización autónoma en la aplicación de patrones de diseño avanzados y técnicas de refactorización para garantizar la escalabilidad del backend.<br>**AV3:** Reconocimiento de que la geolocalización en tiempo real demanda aprendizaje continuo de herramientas especializadas. La configuración de Docker con Redis exigió estudiar de forma autónoma los principios de contenerización y caché distribuida, entendiendo que tecnologías como H3 están en constante evolución.<br>**AV4 (TF):** Adopción autónoma de patrones empresariales basados en mensajería asíncrona JMS utilizando ActiveMQ, asumiendo que los paradigmas guiados por eventos representan una competencia indispensable en arquitecturas distribuidas modernas.<br><br>**Urrutia Peña, Jasmin Adriana**<br>**AV1:** Sistematización de investigación cualitativa mediante herramientas de documentación compartida para entender la evolución de las necesidades del usuario.<br>**AV2:** Estudio autónomo de *Patrones de Diseño* arquitectónicos para garantizar que la estructura de Foodly sea extensible, modular y fácil de mantener a largo plazo.<br>**TB1:** Perfeccionamiento en la documentación de microservicios y trazabilidad de requerimientos, reconociendo la importancia de la claridad técnica en proyectos complejos.<br>**AV3:** Reconocimiento de la importancia del aprendizaje continuo en metodologías de calidad de software. El uso de JUnit 5 y Mockito para los microservicios core permitió comprender que las estrategias de testing en arquitecturas distribuidas evolucionan constantemente y exigen actualización permanente.<br>**AV4 (TF):** Investigación exhaustiva sobre el funcionamiento técnico de capas de anticorrupción (ACL) y gestión de APIs de terceros (Cloudinary), reconociendo la necesidad de aprender de manera continua marcos de resiliencia ante inestabilidades de redes externas.<br><br>**Vega Coronado, Fabricio Samir**<br>**AV1:** Actualización en estándares de la industria FoodTech y modelos de negocio digitales para asegurar la competitividad de la startup.<br>**AV2:** Profundización en el análisis de *Atributos de Calidad*, comprendiendo que la seguridad y escalabilidad requieren un estudio técnico constante frente a tecnologías emergentes.<br>**TB1:** Aprendizaje continuo en la gestión de ciclos de vida de desarrollo ágil y validación técnica de software para satisfacer las expectativas del cliente.<br>**AV3:** Reconocimiento de la necesidad de aprendizaje permanente al integrar servicios externos en microservicios. El desarrollo de pantallas del Dashboard en Vue.js y la conexión al Business Service llevó a investigar de forma autónoma patrones de APIs de terceros y reactividad, sabiendo que el ecosistema frontend evoluciona continuamente.<br>**AV4 (TF):** Autoestudio en el manejo y renderizado de componentes de análisis analítico visual (gráficos estadísticos, charts y mapas de densidad de tráfico en Vue.js) para proveer un panel de control intuitivo al segmento de dueños.<br><br>**Villanueva Andrade, Ysaac Ligorio**<br>**AV1:** Aprendizaje de nuevas metodologías de análisis de requerimientos (Impact Mapping) para conectar objetivos de negocio con entregables técnicos.<br>**AV2:** Dominio autónomo de herramientas de *Modelado Arquitectónico (C4 Model)*, reconociendo que la representación visual estandarizada de sistemas complejos es una habilidad crítica que demanda actualización técnica permanente.<br>**TB1:** Adopción de herramientas de despliegue y análisis de métricas de colaboración grupal (GitHub Insights) para optimizar el rendimiento del equipo de desarrollo.<br>**AV3:** Reconocimiento de la necesidad de aprendizaje continuo al enfrentar la integración de Mapbox con H3 para construir el radar de proximidad interactivo. La implementación comercial geográfica con MongoDB exigió investigar sobre persistencia espacial, asumiendo que la indexación cartográfica es un campo competitivo dinámico.<br>**AV4 (TF):** Autoaprendizaje en técnicas avanzadas de normalización de datos JSON estructurados para colecciones altamente flexibles en MongoDB Atlas, dominando las estrategias modernas de mapeo objeto-documento (ODM). | **AV1:** El equipo reconoce que el desarrollo de Foodly no solo requiere código, sino el aprendizaje permanente de marcos de trabajo arquitectónicos y herramientas de comunicación técnica.<br><br>**AV2:** El avance en el diseño evidencia una curva de aprendizaje de conceptos abstractos exitosa. La organización por roles permitió que cada integrante se especializara en un área técnica, fomentando un entorno de aprendizaje colaborativo.<br><br>**TB1:** El equipo demuestra compromiso con el aprendizaje permanente al dominar herramientas de configuración, pruebas y despliegue, alineando los objetivos del proyecto con las mejores prácticas actuales de la ingeniería de software profesional.<br><br>**AV3:** El equipo consolidó que el aprendizaje permanente no es opcional en proyectos de arquitectura distribuida: es una condición indispensable. La integración de H3, Mapbox, Cloudinary, Docker y Redis en un único ecosistema funcional demostró la capacidad de investigar, adaptarse y actualizar conocimientos de manera autónoma.<br><br>**AV4 (Conclusión Final del Proyecto):** La entrega del Trabajo Final corrobora la asimilación completa de este outcome. Los estudiantes han interiorizado que un ingeniero de software competitivo debe ser un aprendiz autodidacta permanente, capaz de enfrentarse a documentación de librerías en constante mutación (como Uber H3, Mapbox o Redis) y resolver de manera independiente fallas de integración distribuida. Este proyecto cierra demostrando que el hábito del autoaprendizaje técnico y la experimentación rigurosa constituyen los pilares fundamentales para construir soluciones de software resilientes de nivel profesional a lo largo de toda la vida laboral. |
 ### Capítulo I: Introducción
 
 #### 1.1 Startup Profile
@@ -1352,6 +1398,10 @@ Maneja la información transaccional y la integridad referencial estricta del si
 Maneja datos dinámicos, documentos flexibles y garantiza respuestas de baja latencia para búsquedas.
 * **Colección `Menu_Diario` (MongoDB):** Utilizado para la carta dinámica. Almacena documentos con el restaurante_ID y un array de objetos de platos (Nombre, Precio, Foto_URL, Disponibilidad).
 * **Caché en Memoria (Redis):** Almacena el radar temporal. Guarda pares clave-valor que mapean el ID de la celda H3 con la lista de restaurantes activos, garantizando búsquedas geoespaciales en milisegundos.
+
+##### 4.1.5 Diagrama UML
+
+<img src="assets/images/sprint4/uml.png" alt="Diagrama de despliegue UML - Foodly" style="width: 80%; height: auto; border-radius: 8px;" />
 
 ##### 4.1.6 Design Patterns
 * **Factory Method:** Útil para la creación de entidades críticas como locales, registros de sensores o reseñas de usuarios.
@@ -2527,137 +2577,173 @@ Adjunto link del Trello:
 
 ##### 5.3.4 Sprint 4
 
-El cuarto Sprint de Foodly se definió como.........
+El cuarto Sprint de Foodly se define como la etapa de **"Business Intelligence & Infrastructure Consolidation"**. Tras completar en el Sprint 3 la capa de integración con servicios externos (Cloudinary, Mapbox) y el desarrollo inicial del motor Geo-Radar, el objetivo de esta iteración es doble: por un lado, **conectar completamente el Frontend con el Backend real** en las vistas críticas para el segmento Dueños (Dashboard y Reseñas), eliminando datos mockeados; y por otro lado, **cerrar la implementación del Geo-Radar Engine con Redis** (invalidación de caché, cálculo de anillos vecinos H3 y pruebas de carga) y **migrar la infraestructura de desarrollo local hacia un esquema de 3 máquinas virtuales** que separe físicamente la capa de datos, la capa de aplicación (WildFly) y la capa de borde (Frontend + API Gateway), sentando las bases para el despliegue productivo final.
 
 ###### 5.3.4.1 Sprint Backlog 4
 
 | ID Tarea | Tarea de Diseño / Desarrollo | Tipo | Relación con Backlog | Responsable | Estimación (SP) |
 | :--- | :--- | :--- | :--- | :--- | :---: |
-| **T#.#** | ........... | ####### | **US##** | ############, ########### | # |
-| **T#.#** | ........... | ####### | **US##** | ############, ########### | # |
-| **T#.#** | ........... | ####### | **US##** | ############, ########### | # |
-| **T#.#** | ........... | ####### | **US##** | ############, ########### | # |
-| **T#.#** | ........... | ####### | **US##** | ############, ########### | # |
-| **T#.#** | ........... | ####### | **US##** | ############, ########### | # |
+| **T4.1** | Cierre del **Geo-Radar Engine Service**: implementación del cálculo de anillo de celdas vecinas (`k-ring`), invalidación automática de caché en Redis ante cambios de estado del local y pruebas de carga (1,000 consultas concurrentes). | Backend | **US01 / US20 / TS04 / NFR-02 / NFR-06** | Julca Minaya, Sergio Gino | 8 |
+| **T4.2** | Aprovisionamiento de **VM1 (Data Tier)**: instalación y configuración de Redis, MongoDB, ActiveMQ (Message Broker) y MySQL en contenedores Docker aislados por servicio. | Infraestructura | **CON-03 / CON-05** | Urrutia Peña, Jasmin Adriana | 5 |
+| **T4.3** | Aprovisionamiento de **VM2 (Application Tier)**: instalación de WildFly, despliegue de los 4 microservicios (.war) y configuración de conexión remota hacia VM1. | Infraestructura | **CON-02 / CON-05** | Villanueva Andrade, Ysaac Ligorio | 5 |
+| **T4.4** | Aprovisionamiento de **VM3 (Edge Tier)**: build de producción del Frontend Vue.js, configuración del API Gateway (rate limiting, enrutamiento) y exposición pública vía Nginx. | Infraestructura | **CON-01 / QA-01** | Vega Coronado, Fabricio Samir | 5 |
+| **T4.5** | Pruebas de integración end-to-end entre las 3 VMs (conectividad de red, latencia inter-VM) y documentación del runbook de despliegue distribuido. | Documentación / QA | **ARC-04 / ARC-05** | Cacho Seminario, Diego Alonso | 5 |
+
+
 
 ###### 5.3.4.2  Development Evidence for Sprint Review
 
-El propósito de esta sección es presentar.........
+A diferencia de los sprints anteriores, el esfuerzo del equipo durante el Sprint 4 se concentró mayoritariamente en el **aprovisionamiento y configuración de la infraestructura distribuida** (VM1, VM2 y VM3), en lugar de en el desarrollo de nuevas funcionalidades de negocio. Esto implicó dedicar la mayor parte del tiempo a tareas de DevOps —instalación de Docker, configuración de contenedores, ajuste de redes internas entre máquinas virtuales y despliegue de los microservicios en WildFly— por lo que el volumen de commits de código de aplicación fue menor en comparación con sprints previos, viéndose reflejado principalmente en ajustes puntuales sobre el Geo-Radar Engine Service.
 
 | Repositorio | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **############** | #### | `######` | ####### | #######. | Jul ##, 2026 |
-| **############** | #### | `######` | ####### | #######. | Jul ##, 2026 |
-| **############** | #### | `######` | ####### | #######. | Jul ##, 2026 |
-| **############** | #### | `######` | ####### | #######. | Jul ##, 2026 |
-| **############** | #### | `######` | ####### | #######. | Jul ##, 2026 |
-| **############** | #### | `######` | ####### | #######. | Jul ##, 2026 |
-| **############** | #### | `######` | ####### | #######. | Jul ##, 2026 |
+| **foodly-microservices** | `main` | `eecf536` | ds | *N/A* | Jul 5, 2026 |
+| **foodly-microservices** | `main` | `de20276` | dsa | *N/A* | Jul 5, 2026 |
+| **foodly-microservices** | `main` | `f91e8f7` | fix jwt validation filter of radar service | *N/A* | Jun 22, 2026 |
 
 ###### 5.3.4.3	Testing Suite Evidence for Sprint Review
 
-Con el objetivo de..........
+Dado que el foco del Sprint 4 estuvo orientado a infraestructura y al cierre del Geo-Radar Engine, la suite de pruebas se centró en validar la resiliencia del sistema distribuido entre las 3 VMs y el correcto comportamiento del radar bajo carga, en lugar de nuevas reglas de negocio. A continuación se detallan los escenarios de prueba ejecutados:
 
-A continuación, se presentan las evidencias de la suite de pruebas unitarias implementadas en los tres microservicios core del sistema: 
+**Escenario 1 – Cálculo de k-ring en el radar**
+> **Given** un comensal ubicado en una celda H3 con restaurantes activos en celdas vecinas
+> **When** el sistema calcula el anillo de celdas (`k-ring = 1`)
+> **Then** el radar retorna los restaurantes de la celda actual y de las 6 celdas adyacentes, sin duplicados.
 
-Business:
-![test1](assets/images/sprint4/########.png)
+**Escenario 2 – Prueba de carga sobre el Geo-Radar**
+> **Given** 1,000 solicitudes concurrentes hacia la misma celda H3
+> **When** el motor procesa las consultas geoespaciales
+> **Then** el tiempo de respuesta se mantiene por debajo de los 200ms establecidos en NFR-02, sin caídas del servicio.
 
-Community:
-![test1](assets/images/sprint4/########.png)
-
-Identity:
-![test1](assets/images/sprint4/########.png)
+**Escenario 3 – Conectividad entre VMs (Data Tier → Application Tier)**
+> **Given** el microservicio desplegado en VM2 (WildFly)
+> **When** intenta establecer conexión con Redis, MongoDB y MySQL en VM1
+> **Then** la conexión se establece correctamente por red interna, sin necesidad de exponer los puertos de datos a internet.
 
 ###### 5.3.4.4	Execution Evidence for Sprint Review
 
-Evidencia Frontend Mapa:
-![test1](assets/images/sprint4/########.png)
+Backend:
+1. VM1 GATEWAY - FRONTEND
 
-Evidencia Frontend seccion Dueños:
-<img src="assets/images/chapter-5/########.jpeg" alt="##########" style="width: 60%; height: auto; border-radius: 8px;" />
+-creacion de vm
+![test1](assets/images/sprint4/VM1-1.png)
+![test1](assets/images/sprint4/VM1-2.png)
+![test1](assets/images/sprint4/VM1-3.png)
 
-<img src="assets/images/chapter-5/########.jpeg" alt="##########" style="width: 60%; height: auto; border-radius: 8px;" />
+-creamos la configuracion std
+![test1](assets/images/sprint4/VM1-4.png)
+![test1](assets/images/sprint4/VM1-5.png)
+![test1](assets/images/sprint4/VM1-6.png)
+![test1](assets/images/sprint4/VM1-7.png)
+![test1](assets/images/sprint4/VM1-8.png)
+![test1](assets/images/sprint4/VM1-9.png)
+![test1](assets/images/sprint4/VM1-10.png)
 
-<img src="assets/images/chapter-5/########.jpeg" alt="##########" style="width: 60%; height: auto; border-radius: 8px;" />
+-ingreso por shh
+![test1](assets/images/sprint4/VM1-11.png)
+![test1](assets/images/sprint4/VM1-12.png)
+![test1](assets/images/sprint4/VM1-13.png)
 
-<img src="assets/images/chapter-5/########.jpeg" alt="##########" style="width: 60%; height: auto; border-radius: 8px;" />
+-corremos docker
+![test1](assets/images/sprint4/VM1-14.png)
+![test1](assets/images/sprint4/VM1-15.png)
+![test1](assets/images/sprint4/VM1-16.png)
+![test1](assets/images/sprint4/VM1-17.png)
+![test1](assets/images/sprint4/VM1-18.png)
 
-<img src="assets/images/chapter-5/########.jpeg" alt="##########" style="width: 60%; height: auto; border-radius: 8px;" />
+2. VM PARA WILDFLY
 
-<img src="assets/images/chapter-5/########.jpeg" alt="##########" style="width: 60%; height: auto; border-radius: 8px;" />
+-creacion de vm
+![test1](assets/images/sprint4/VM2-1.png)
+![test1](assets/images/sprint4/VM2-2.png)
+![test1](assets/images/sprint4/VM2-3.png)
 
-<img src="assets/images/chapter-5/########.jpeg" alt="##########" style="width: 60%; height: auto; border-radius: 8px;" />
+-configuracion de maquina e instalacion de java 17
 
-Evidencia Implementacion de Cloudinary: 
+![test1](assets/images/sprint4/VM2-4.png)
+![test1](assets/images/sprint4/VM2-5.png)
+![test1](assets/images/sprint4/VM2-6.png)
+![test1](assets/images/sprint4/VM2-7.png)
+![test1](assets/images/sprint4/VM2-8.png)
+![test1](assets/images/sprint4/VM2-9.png)
+![test1](assets/images/sprint4/VM2-10.png)
+![test1](assets/images/sprint4/VM2-11.png)
 
-![test1](assets/images/sprint4/########.png)
-![test1](assets/images/sprint4/########.png)
-![test1](assets/images/sprint4/########.png)
-![test1](assets/images/sprint4/########.png)
+-instalamos wildfly en la virtual machine
 
-Evidencia Implementacion de H3 con mapbox:
-![test1](assets/images/sprint4/########.png)
+![test1](assets/images/sprint4/VM2-12.png)
+![test1](assets/images/sprint4/VM2-13.png)
+![test1](assets/images/sprint4/VM2-14.png)
+![test1](assets/images/sprint4/VM2-15.png)
+![test1](assets/images/sprint4/VM2-16.png)
+![test1](assets/images/sprint4/VM2-17.png)
+![test1](assets/images/sprint4/VM2-18.png)
 
-Creacion de MongoDB Atlas:
-![test1](assets/images/sprint4/########.png)
-![test1](assets/images/sprint4/########.png)
+3. INTERCONEXION
 
+![test1](assets/images/sprint4/inter1.png)
+![test1](assets/images/sprint4/inter2.png)
+![test1](assets/images/sprint4/inter3.png)
+![test1](assets/images/sprint4/inter5.png)
+
+
+4. VM3 BROCKERS BDS
+
+-creacion de vm
+![test1](assets/images/sprint4/VM3-1.png)
+![test1](assets/images/sprint4/VM3-2.png)
+![test1](assets/images/sprint4/VM3-3.png)
+
+-creacion la configuracion std
+![test1](assets/images/sprint4/VM3-4.png)
+![test1](assets/images/sprint4/VM3-5.png)
+![test1](assets/images/sprint4/VM3-6.png)
+![test1](assets/images/sprint4/VM3-7.png)
+![test1](assets/images/sprint4/VM3-8.png)
+![test1](assets/images/sprint4/VM3-9.png)
+![test1](assets/images/sprint4/VM3-10.png)
+
+-instalar docker y docker compose
+![test1](assets/images/sprint4/VM3-11.png)
+![test1](assets/images/sprint4/VM3-12.png)
+![test1](assets/images/sprint4/VM3-13.png)
+![test1](assets/images/sprint4/VM3-14.png)
+![test1](assets/images/sprint4/VM3-15.png)
+![test1](assets/images/sprint4/VM3-16.png)
+![test1](assets/images/sprint4/VM3-17.png)
+![test1](assets/images/sprint4/VM3-18.png)
+![test1](assets/images/sprint4/VM3-19.png)
 
 
 ###### 5.3.4.5	Microservices Documentation Evidence for Sprint Review
 
-Bussines service:
-![test1](assets/images/sprint4/########.png)
-![test1](assets/images/sprint4/########.png)
-
-Community service:
-![test1](assets/images/sprint4/########.jpeg)
-![test1](assets/images/sprint4/########.jpeg)
-
-Identity service:
-![test1](assets/images/sprint4/########.jpeg)
-![test1](assets/images/sprint4/########.jpeg)
+-Microservicio Radar
 
 
 ###### 5.3.4.6	Software Deployment Evidence for Sprint Review
 
-Frontend:
-![test1](assets/images/sprint4/########.jpeg)
-![test1](assets/images/sprint4/########.jpeg)
-![test1](assets/images/sprint4/########.jpeg)
-![test1](assets/images/sprint4/########.jpeg)
+El despliegue de la infraestructura distribuida se llevó a cabo mediante virtualización, aprovisionando las 3 máquinas virtuales (VM1 - Data Tier, VM2 - Application Tier, VM3 - Edge Tier) dentro de una red interna aislada que replica la topología de despliegue definida en el Capítulo IV. Este enfoque permitió al equipo validar de manera controlada la comunicación entre capas, la configuración de red interna y el correcto funcionamiento de cada servicio antes de proceder con la migración hacia el proveedor de nube pública definido para el despliegue final.
 
-Link del Frontend Deployado en Vercel: https://foodly-frontend-steel.vercel.app/
+Cada VM se aprovisionó de forma independiente, asignándosele una IP dentro de la red interna del entorno de virtualización, permitiendo que:
 
-Backend:
+- **VM1 (Data Tier)** exponga únicamente los puertos necesarios (Redis, MongoDB, ActiveMQ, MySQL) hacia la red interna.
+- **VM2 (Application Tier)** se comunique con VM1 mediante las IPs internas configuradas en los microservicios desplegados en WildFly.
+- **VM3 (Edge Tier)** actúe como único punto de acceso, exponiendo el Frontend y el API Gateway hacia el resto del equipo.
 
-
-Docker:
-
-
-Radar Service:
-
+![test1](assets/images/sprint4/vmscorriendo.png)
 
 ###### 5.3.4.7  Team Collaboration Insights during Sprint
 
-La ejecución de este sprint ha consolidado.......
-
-Frontend:
-![test1](assets/images/sprint4/########.png)
-
 Backend:
-![test1](assets/images/sprint4/########.png)
+![test1](assets/images/sprint4/comids1.png)
 
 ###### 5.3.4.8	Kanban Board
 
 Para este punto implementamos un tablero Kanban utilizando Trello. Esta herramientapermitió al equipo organizar las tareas del Sprint Backlog, visualizar el progreso y facilitar la colaboración. Trello se adaptó a nuestras necesidades específicas, mejorando la eficiencia y la comunicación dentro del equipo.
 
-![test1](assets/images/sprint4/########.png)
+Adjunto link del Trello: 
 
-Adjunto link del Trello:
-
-- LINK
+- https://trello.com/invite/b/69f501c05c2af93e4ff4893c/ATTIfcb179e7128dc5ba98dbc4b53ed07c7e7F9CD517/kanban-board
 
 ## 5.4 Microservices Deployment
 
@@ -2699,13 +2785,13 @@ equipo en prácticas de calidad de software. En conjunto, este entregable consol
 como una plataforma técnicamente sólida, preparada para su validación integral y despliegue 
 final en la nube.
 
-**TB2:** Durante la TB2, .......
+**TB2:** Durante la TB2, el equipo consolidó la transición de una arquitectura funcionando en un solo entorno hacia una infraestructura distribuida en múltiples capas, aprovisionando y comunicando exitosamente las tres máquinas virtuales que replican la separación entre datos, lógica de negocio y borde definida en el diseño arquitectónico. El cierre del Geo-Radar Engine con el cálculo de celdas vecinas (k-ring) y la invalidación selectiva de caché en Redis demostró que el sistema puede sostener los tiempos de respuesta exigidos por los atributos de calidad de Performance incluso bajo consultas concurrentes. Asimismo, la validación de la conectividad interna entre VMs y el correcto enrutamiento a través del API Gateway confirmaron que la arquitectura de microservicios diseñada en capítulos anteriores es viable más allá de un entorno de desarrollo local centralizado, dejando al equipo mejor preparado para la migración final hacia un proveedor de nube pública.
 
 ### Video About-The-Team
 
 Link del video About the Team : 
 
-https://youtu.be/z09QmwU_QcA
+https://youtu.be/_USkxFrRB0M
 
 ### Referencias Bibliográficas
 
@@ -2728,3 +2814,5 @@ https://youtu.be/z09QmwU_QcA
 ### Links
 Link Organizacion GitHub: https://github.com/1ASI0657-FoodNode
 Link Repository-Report: https://github.com/1ASI0657-FoodNode/Foodly-report
+Link About-the-Team: https://youtu.be/_USkxFrRB0M
+Link Repositorio-Backend: https://github.com/foodnode-upc-pre-202610-1asi0657-17949/foodly-microservices
