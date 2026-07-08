@@ -2715,7 +2715,30 @@ Backend:
 
 ###### 5.3.4.5	Microservices Documentation Evidence for Sprint Review
 
--Microservicio Radar
+A diferencia de otros stacks basados en Spring Boot que suelen exponer su documentación mediante Swagger/OpenAPI de forma automática, la documentación de los endpoints de Foodly se genera y consulta directamente desde la **consola de administración de WildFly**, dado que los microservicios están construidos sobre **Jakarta EE (JAX-RS)** y no requieren una librería adicional de documentación: el propio contenedor de aplicaciones expone los *REST Resources* desplegados, junto con sus métodos HTTP, rutas, tipos de contenido (`application/json`) y la firma completa del método Java que atiende cada petición. Esto permite verificar en tiempo real qué recursos están activos por cada `.war` desplegado, sin depender de configuración externa.
+
+A continuación se presenta la evidencia de los endpoints documentados para cada uno de los microservicios core del sistema:
+
+**Business Service:**
+
+La consola de WildFly lista los recursos expuestos por `foodly-business-service.war` a través de la clase `c.f.b.p.rest.HuariqueController`, evidenciando las rutas `/huariques`, `/huariques/me` y `/huariques/{id}/menu`, con sus respectivos verbos HTTP (POST, GET, PUT) y la firma del método `HuariqueController` que procesa cada solicitud.
+
+![test1](assets/images/sprint3/endpoints1.png)
+![test1](assets/images/sprint3/endpoints2.png)
+
+**Community Service:**
+
+De igual manera, se documentan los recursos expuestos por `foodly-community-service.war` mediante la clase `c.f.c.p.rest.CommunityController`, correspondientes a la gestión de reseñas y favoritos.
+
+![test1](assets/images/sprint3/endpoints3.jpeg)
+![test1](assets/images/sprint3/endpoints4.jpeg)
+
+**Identity Service:**
+
+Finalmente, `foodly-identity-service.war` expone sus recursos a través de las clases `c.f.i.p.rest.AuthController` y `c.f.i.p.rest.UserController`, cubriendo los flujos de autenticación y gestión de usuarios.
+
+![test1](assets/images/sprint3/endpoints5.jpeg)
+![test1](assets/images/sprint3/endpoints6.jpeg)
 
 
 ###### 5.3.4.6	Software Deployment Evidence for Sprint Review
